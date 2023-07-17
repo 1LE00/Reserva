@@ -1,0 +1,56 @@
+[
+    {
+        "name" : "Juju Dhau" ,
+        "description" : "Delicious curd made in Bhaktapur" ,
+        "price" : "220" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Rasmalai" , 
+        "description" : "Super Soft Cottage Cheese cooked in Milky Syrup." ,
+        "price" : "250" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Gulab Jamun" ,
+        "description" : "Soft and Delicious Berry Sized balls of Milk Solids soaked in flavored honey syrup." ,
+        "price" : "300" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Rice Pudding" ,
+        "description" : "Rich Saffron Flavor rice Pudding,Warm Spices" ,
+        "price" : "350" ,
+        "imagePath" :""
+    },
+    {
+        "name" : "Mango Lassi" ,
+        "description" : "Combination of curd/mango pulp, honey" ,
+        "price" : "250" ,
+        "imagePath" : "" 
+    },
+    {
+        "name"  : "Jerry" ,
+        "description" : "Deep-fried maida flour batter in pretzel or circular shapes and soaking them in sugar syrup." ,
+        "price" : "150" ,
+        "imagePath" : ""
+     },
+     {
+        "name" : "Gud-Paak",
+        "description" : "Made with a base of khuwa mixed with dried fruits or nuts, decorated with watermelon seeds and dry grapes" ,
+        "price" : "220" ,
+        "imagePath" : ""
+     },
+     {
+        "name" : "Rasbari" ,
+        "description" : "Small white milk balls usually soaked in a sugary syrup" ,
+        "price" : "250" ,
+        "imagePath" : ""
+     },
+     {
+        "name" : "Peda" ,
+        "description" : "Sweet made with sweetened condensed milk or khuwa and sugar, topped with traditional flavorings such as pistachios or almonds" ,
+        "price" : "350",
+        "imagePath" :""
+     }
+    ]

@@ -1,0 +1,86 @@
+<%- include('partials/header') %>
+    <link rel="stylesheet" href="/css/auth.css">
+    </head>
+
+    <body>
+        <main id="main" class="flex flex-column">
+            <div class="register-container flex flex-column holder" id="register-container">
+                <div class="form-container register-form-container">
+                    <a href="/" class="text-center block">
+                        <img class="logo inline-block" src="/images/logo.svg" alt="logo">
+                    </a>
+                    <h2 class="uppercase text-center">Sign Up</h2>
+                    <div class="message">
+                        <p><span><%= message %></span></p>
+                    </div>
+                    <form action="/register" method="post" name="register-form" id="register-form"
+                        class="form register-form flex flex-column" autocomplete="off">
+                        <div class="register-name-container flex flex-column">
+                            <div class="register-name flex icon-control">
+                                <span class="user-icon">
+                                    <img src="/images/login/user-regular.svg" width="20px" height="16px" alt="">
+                                </span>
+                                <input type="text" name="fullname" id="fullname" placeholder="Full Name" maxlength="50" value="<%= registerName %>">
+                            </div>
+                            <span class="error flex name-error">
+                                <img class="inline" src="/images/circle-exclamation-solid.svg" alt="">
+                                <span class="err-msg"></span>
+                            </span>
+                        </div>
+
+                        <div class="register-email-container flex flex-column">
+                            <div class="register-email flex icon-control">
+                                <span class="email-icon">
+                                    <img src="/images/login/icon-email.svg" width="20px" height="16px" alt="">
+                                </span>
+                                <input type="text" name="username" id="register-email" placeholder="Email" value ="<%= registerEmail %>">
+                            </div>
+                            <span class="error flex register-email-error">
+                                <img class="inline" src="/images/circle-exclamation-solid.svg" alt="">
+                                <span class="err-msg"></span>
+                            </span>
+                        </div>
+
+                        <div class="register-password-container flex flex-column">
+                            <div class="register-password flex icon-control">
+                                <span class="password-icon">
+                                    <img src="/images/login/key-solid.svg" width="20px" height="16px" alt="">
+                                </span>
+                                <input type="password" name="password" id="register-password"
+                                    placeholder="Password" maxlength="20" data-password>
+                                <span class="eye-holder"></span>
+                            </div>
+                            <span class="error register-password-error none flex">
+                                <img class="inline" src="/images/circle-exclamation-solid.svg" alt="">
+                                <span class="err-msg"></span>
+                            </span>
+                        </div>
+
+                        <div class="register-contact-container flex flex-column">
+                            <div class="register-contact flex icon-control">
+                                <span class="contact-icon">
+                                    <img src="/images/login/address-book-regular.svg" width="20px" height="16px" alt="">
+                                </span>
+                                <input type="number" name="contact" id="register-contact" placeholder="Contact Number">
+                            </div>
+                            <span class="error flex contact-error">
+                                <img class="inline" src="/images/circle-exclamation-solid.svg" alt="">
+                                <span class="err-msg"></span>
+                            </span>
+                        </div>
+
+                        <div class="btn register-btn">
+                            <button type="submit" id="sign-up">Sign Up</button>
+                        </div>
+                    </form>
+                    <div class="goto goto-login">
+                        <span>Already have an account?</span>
+                        <a href="/login" id="sign-in-toggler" class="toggler">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="/javascript/register.js"></script>
+    </body>
+
+    </html>

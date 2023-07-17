@@ -1,0 +1,51 @@
+<%- include('./partials/header') %>
+    <link rel="stylesheet" href="/css/admin.css">
+    </head>
+
+    <body>
+        <div class="container flex w-100">
+            <div class="primary-navbar invisible">
+                <%- include('./partials/primary-nav') %>
+            </div>
+            <main class="w-100" id="index-main">
+                <%- include('./partials/nav') %>
+                    <div class="content">
+                        <div class="heading">
+                            <h1 class="uppercase text-center"
+                                style="font-weight:600; letter-spacing: 5px; line-height: 1.5">Add Tables
+                            </h1>
+                        </div>
+
+                        <div id="add-tables" class="flex flex-column available-messages">
+                            <div class="card-view-options flex">
+                                <button class="launch-edit-modal">
+                                    <img src="/images/bars-solid.svg" alt="">
+                                </button>
+                                <button class="launch-delete-modal">
+                                    <img src="/images/table-solid.svg" alt="">
+                                </button>
+                            </div>
+                            <form action="/reserva/tables/add" method="post" class="add-table add flex flex flex-column" name="add-table"
+                                id="add-table" autocomplete="off">
+                                <div class="table-number-container">
+                                    <label for="table-number">Table Number:</label>
+                                    <input type="number" name="tableNumber" id="table-number">
+                                </div>
+                                <div class="seating-capacity-container">
+                                    <label for="seating-capacity">Seating Capacity:</label>
+                                    <input type="number" name="seatingCapacity" id="seating-capacity">
+                                </div>
+                                <div class="btn">
+                                    <button type="submit" name="edit" class="uppercase" id="edit">Add</button>
+                                    <button type="button" name="cancel" class="uppercase" id="cancel"
+                                        data-close-edit>Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+            </main>
+        </div>
+        <script src="/javascript/admin/index.js"></script>
+        <script src="/javascript/admin/addTable.js"></script>
+    </body>
+
+    </html>

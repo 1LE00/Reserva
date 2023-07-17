@@ -1,0 +1,38 @@
+[
+    {
+        "name" : "Stufato d'Agnello alla Greca " ,
+        "description" : "Oven stewed mutton in a tomato-rosemary gravy" ,
+        "price" : "1650" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Anatra arrosto Craccante" ,
+        "description" : "Roasted duck, cannellini beans with sundried tomatoes & crispy vegetables." ,
+        "price" : "1550" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : " Crocchette di Patata & Ragu di Verdure" ,
+        "description" : "Potato & mozzarella cheese balls, mushroom & peas ragout, beetroot-carrot salad." ,
+        "price" : "700" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : " Melanzane alla parmigiana" ,
+        "description" : "Grilled eggplant, mozzarella & parmesan cheese, tomato sauce & basil." ,
+        "price" : "850" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Filetti di Pesce alla Mediterranea" ,
+        "description" : "Oven baked fish marinated with garlic, olive oil & Italian parsley." ,
+        "price" : "975" ,
+        "imagePath" : "" 
+    } ,
+    {
+        "name" : "Grilled Chicken Souvlaki" ,
+        "description" : "Fragrant chicken kebab marinated with lemon, oregano & olive oil, served with tzatziki & pita bread." ,
+        "price" : "875" ,
+        "imagePath" : ""
+    }
+]

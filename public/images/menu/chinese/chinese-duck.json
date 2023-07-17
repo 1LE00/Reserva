@@ -1,0 +1,14 @@
+[
+    {
+        "name" : "Roasted Duck" ,
+        "description" : "Duck roasted with root vegetables, sweet potatoes, a delicious sauce like orange sauce, cranberry sauce or red currant gravy" ,
+        "price" : "850" , 
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Peking Duck" ,
+        "description" : "Duck meat characterized by its thin, crispy skin, with authentic versions of the dish serving mostly the skin and little meat, sliced in front of the diners by the cook." ,
+        "price" : "2500" , 
+        "imagePath" : ""
+    } 
+]

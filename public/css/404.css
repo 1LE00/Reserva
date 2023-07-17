@@ -1,0 +1,33 @@
+@media screen and (min-width: 320px) {
+  body {
+    display: block;
+    background-color: hsl(var(--clr-menu));
+  }
+
+  .container {
+    justify-content: center;
+    min-height: 100vh;
+    padding-inline: 1.75rem;
+  }
+
+  .card{
+    padding: 2rem;
+    background-color: hsl(var(--clr-menu),0.5);
+  }
+
+  .card h1{
+    font: 600 clamp(var(--fs-700), 4.5vw, var(--fs-800)) var(--ff-sans-normal);
+    color: hsl(var(--clr-primary));
+    letter-spacing: 5px;
+  }
+
+  p, .return{
+    font: 400 clamp(var(--fs-300), 4.5vw, var(--fs-700)) var(--ff-sans-normal);
+    margin-block-start: 1.5rem;
+  }
+
+  .return a{
+    color: hsl(var(--clr-primary));
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,63 @@
+<%- include('../partials/header') %>
+    <link rel="stylesheet" href="/css/user.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <%- include('../partials/nav') -%>
+                <main class="main flex flex-column" id="main">
+                    <div class="page-left w-100">
+                        <div class="page-left-content flex flex-column">
+                            <nav class="secondary-nav flex">
+                                <%- include('../user/user-nav') %>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="page-right w-100">
+                        <div class="page-right-content flex flex-column">
+                            <div class="home content-holder flex flex-column " id="home-content"
+                                data-content-holder>
+                                <div class="greetings flex flex-column text-center w-100">
+                                    <div class="img-holder">
+                                        <img src="/images/testimonials/testi-avatar.jpg" alt="">
+                                    </div>
+                                    <h2>Welcome, <%= username %>
+                                    </h2>
+                                </div>
+                                <div class="personal-info flex flex-column">
+                                    <h2>Personal Information</h2>
+                                    <p>The details you have shared with us are below:</p>
+                                    <ul class="personal-details w-100">
+                                        <li>Full Name : <%= username %>
+                                        </li>
+                                        <li>Email : <%= email %>
+                                        </li>
+                                        <li>Contact : <%= contact %>
+                                        </li>
+                                </div>
+
+                                <div class="download-account-information flex flex-column">
+                                    <h2>Download Account Information</h2>
+                                    <p>Create and download a copy of the information you’ve shared with us. Once your
+                                        file
+                                        has been created, you’ll receive an email with the password.</p>
+                                    <button class="uppercase" id="request-download">Request Download</button>
+                                </div>
+                                <div class="delete-account flex flex-column">
+                                    <h2>Delete Account</h2>
+                                    <p>Click REQUEST ACCOUNT DELETE to start the process of permanently deleting your Reservá account including all personal information, booking history and order history.</p>
+                                    <button class="uppercase" id="request-account-delete">Request account
+                                        Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        </main>
+        </div>
+        <script src="/javascript/nav.js"></script>
+        <script src="/javascript/user/nav.js"></script>
+        <script src="/javascript/user/home.js"></script>
+    </body>
+
+    </html>

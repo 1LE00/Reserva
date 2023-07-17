@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "Shrimp Fried Rice" ,
+        "description" : "Made with rice, shrimp, peas, carrots, onion, and egg, plus savory Asian flavors." ,
+        "price" : "550" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Roast Pork Fried Rice" ,
+        "description" : "Rice fried in olive oil with roasted pork meat cooked in soy sauce and garlic." ,
+        "price" : "500" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Salted Vegetable Fried Race" , 
+        "description" : "Fried rice with carrot,onion,coriander and other vegetables." ,
+        "price" : "420" ,
+        "imagePath" : ""
+    } , 
+    { 
+        "name" : "Egg Tomato Fried Rice",
+        "description" : "Fried rice served with mashed egg and tomato" ,
+        "price" : "350" ,
+        "imagePath" : ""
+    } 
+]

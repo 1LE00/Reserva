@@ -1,0 +1,507 @@
+<%- include('partials/header') %>    
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preload" as="image" href="/images/interior/pexels-rachel-claire-4577179.jpg">
+    <link rel="preload" as="image" href="/images/food/menu-slider.jpg">
+    <link rel="preload" as="image" href="/images/interior/david-von-diemar-0BZcsD8UVmM-unsplash.jpg">
+</head>
+
+<body>
+    <div class="container">
+        <div class="restaurant-info none" data-restaurant-info>
+            <div class="left-block flex">
+                <address class="flex">
+                    <img src="/images/icon-location.svg" alt="location-outline" width="10px" height="15px">
+                    <span class="top-icons-text">123 Main St, Anytown USA</span>
+                </address>
+
+                <div class="cube"></div>
+
+                <div class="opening-hrs flex">
+                    <img src="/images/clock-regular.svg" alt="clock-outline" class="top-icons" width="14px"
+                        height="15px">
+                    <span class="top-icons-text">Daily : 8:00 am to 10:00 pm</span>
+                </div>
+            </div>
+            <div class="right-block flex">
+                <div class="tel flex">
+                    <img src="/images/phone-solid.svg" alt="phone-solid" class="top-icons" width="14px" height="15px">
+                    <span class="top-icons-text">+1 123 456 7890</span>
+                </div>
+
+                <div class="cube"></div>
+
+                <div class="mailto flex">
+                    <img src="/images/envelope-regular.svg" alt="envelope-regular" class="top-icons" width="14px"
+                        height="15px">
+                    <span class="top-icons-text">restaurant@info.com</span>
+                </div>
+            </div>
+        </div>
+
+        <%- include('partials/nav') %>
+
+        <section class="hero">
+            <ul class="hero-slider">
+
+                <li class="slider-item flex flex-column text-center active">
+                    <span class="hero-label uppercase hero-text-reveal">Delightful Experience</span>
+                    <div class="separator hero-text-reveal"></div>
+                    <h1 class="hero-title hero-text-reveal">Reservation for a<br>
+                        Culinary Quest
+                    </h1>
+                    <p class="hero-subtitle hero-text-reveal">Enjoy Gourmet Cuisine with Online Booking</p>
+                    <button class="view-menu uppercase hero-text-reveal"><a href="/reservation">Book a
+                            Table</a></button>
+                    <div class="hero-slider-container">
+                        <img style="opacity: 0.75;" src="/images/interior/pexels-rachel-claire-4577179.jpg" alt=""
+                            class="slider-img">
+                    </div>
+                </li>
+
+                <li class="slider-item flex flex-column text-center ">
+                    <span class="hero-label uppercase hero-text-reveal">Traditional & hygiene</span>
+                    <div class="separator hero-text-reveal"></div>
+                    <h1 class="hero-title hero-text-reveal">Flavors Inspired by <br>
+                        the Seasons
+                    </h1>
+                    <p class="hero-subtitle hero-text-reveal">Come with family & feel the joy of mouthwatering food</p>
+                    <button class="view-menu uppercase hero-text-reveal"><a href="/menu">View Our Menu</a></button>
+                    <div class="hero-slider-container">
+                        <img src="/images/food/menu-slider.jpg" alt="" class="slider-img">
+                    </div>
+                </li>
+
+                <li class="slider-item flex flex-column text-center">
+                    <span class="hero-label uppercase hero-text-reveal">Exquisite Experience</span>
+                    <div class="separator hero-text-reveal"></div>
+                    <h1 class="hero-title hero-text-reveal">Unique Events, <br>
+                        Inspired Dining
+                    </h1>
+                    <p class="hero-subtitle hero-text-reveal">Join Us for a Memorable Feast with family & friends</p>
+                    <button class="view-menu uppercase hero-text-reveal"><a href="/events">View Events</a></button>
+                    <div class="hero-slider-container">
+                        <img style="opacity: 0.4;" src="/images/interior/david-von-diemar-0BZcsD8UVmM-unsplash.jpg"
+                            alt="" class="slider-img">
+                    </div>
+                </li>
+
+                <a href="/reservation" class="uppercase text-center flex flex-column">
+                    <img src="/images/table-icon.png" alt="table-icon">
+                    <span>Book a Table</span>
+                </a>
+            </ul>
+        </section>
+        <main id="main">
+            <section class="offer flex flex-column">
+                <section class="offer-header flex flex-column text-center">
+                    <h3 class="uppercase">Feast like royalty</h3>
+                    <div class="separator"></div>
+                    <h2 class="offer-header-title">
+                        We Offer Top Notch
+                    </h2>
+                    <p class="offer-header-paragraph">
+                        We provide one of the best fooding and hospitality service for our guest to have a memorable
+                        experience.
+                    </p>
+                </section>
+
+                <section class="offer-footer flex flex-column">
+                    <div class="offer-card card bdr-b-l-b-r-15 flex flex-column text-center">
+                        <figure>
+                            <img src="/images/offer/gourmet-cousine.jpg" alt="" width="256" height="336">
+                        </figure>
+                        <h2 class="uppercase">Gourmet Cuisine</h2>
+                        <p class="offer-description">We employ the chef's culinary skills and only the finest, freshest
+                            ingredients.</p>
+                    </div>
+
+                    <div class="offer-card card bdr-b-l-b-r-15 flex flex-column text-center">
+                        <figure>
+                            <img src="/images/offer/ambiance.jpg" alt="">
+                        </figure>
+                        <h2 class="uppercase">Top-notch Ambience</h2>
+                        <p class="offer-description">We give our patrons an attractive eating setting with the best
+                            ambience, lighting, and surroundings.</p>
+                    </div>
+
+                    <div class="offer-card card bdr-b-l-b-r-15 flex flex-column text-center">
+                        <figure>
+                            <img src="/images/offer/wine-pairing.jpg" alt="" width="256" height="336">
+                        </figure>
+                        <h2 class="uppercase">Wine Pairing</h2>
+                        <p class="offer-description">We are enthusiastic to combine the most exquisite wine with
+                            specific dishes.</p>
+                    </div>
+
+                    <div class="offer-card card bdr-b-l-b-r-15 flex flex-column text-center">
+                        <figure>
+                            <img src="/images/offer/chef-table.jpg" alt="" width="256" height="336">
+                        </figure>
+                        <h2 class="uppercase">Chef's table</h2>
+                        <p class="offer-description">We offer an exclusive "chef's table" experience, which includes a
+                            special meal prepared by in front chefs.</p>
+                    </div>
+
+                </section>
+
+                <button class="read-more uppercase"><a href="/offer.html">Read More</a></button>
+
+            </section>
+
+            <section class="story flex flex-column text-center">
+                <div class="story-header flex flex-column">
+                    <h3 class="uppercase">Our story</h3>
+                    <div class="separator"></div>
+                    <h2>Discover the story behind every Fla vor</h2>
+                    <p>Giving our customers the greatest flavor in every cuisine and dish has always been our top
+                        concern. To develop the ideal cuisine with it's own unique tase, we individually gathered chefs
+                        from all around.</p>
+                    <button class="read-more uppercase"><a href="about.html">Read More</a></button>
+                </div>
+
+                <div class="story-img-container">
+                    <img src="/images/story/pexels-rachel-claire-4577179.jpg" width="1280" height="560" alt="">
+                </div>
+            </section>
+
+            <section class="special-dish flex flex-column">
+                <div class="special-dish-img-container">
+                    <img src="/images/food/monika-grabkowska-xr55g7_0kQ4-unsplash.jpg" width="1920" height="2884"
+                        alt="">
+                </div>
+                <div class="special-dish-about flex flex-column text-center">
+                    <div class="special-dish-holder flex flex-column">
+                        <div class="icon">
+                            <img src="/images/bookmark.png" width="28" height="41" alt="">
+                        </div>
+                        <h3 class="uppercase">Special Dish</h3>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="about-content flex flex-column">
+                        <h2>Halloumi Fig Salad</h2>
+                        <p>A dish that typically includes halloumi cheese, figs, and various greens and other
+                            ingredients such as tomatoes, onions, and nuts & the ingredients are often tossed in a
+                            vinaigrette or other dressing.</p>
+                        <div class="price">Rs 2350.</div>
+                        <button class="view-menu uppercase">
+                            <a href="/menu.html">View All Menu</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu flex flex-column text-center">
+                <div class="menu-holder flex flex-column">
+                    <h3 class="uppercase">Daily Selections</h3>
+                    <div class="separator"></div>
+                    <h2 class="uppercase">Scrumptious Menu</h2>
+                </div>
+
+                <div class="menu-list flex flex-column text-left">
+                    <div class="menu-list-1 flex flex-column">
+                        <div class="menu-card flex">
+                            <div class="menu-img-wrapper">
+                                <img src="/images/food/Profiteroles 3.jpg" alt="">
+                            </div>
+
+                            <div class="menu-content">
+                                <div class="menu-content-top flex flex-column">
+                                    <div class="menu-title-wrapper">
+                                        <h3>Profiteroles</h3>
+                                    </div>
+                                    <div class="menu-price-wrapper flex">
+                                        <span></span>
+                                        <h4>Rs. 830</h4>
+                                    </div>
+                                </div>
+                                <div class="menu-content-bottom">
+                                    <p>Sweet & moist filling of whipped cream, custard, pastry cream & chocolate</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card flex">
+                            <div class="menu-img-wrapper">
+                                <img src="/images/food/Quattro Stagioni 2.jpg" alt="">
+                            </div>
+
+                            <div class="menu-content">
+                                <div class="menu-content-top flex flex-column">
+                                    <div class="menu-title-wrapper">
+                                        <h3>Quattro Stagioni</h3>
+                                    </div>
+                                    <div class="menu-price-wrapper flex">
+                                        <span></span>
+                                        <h4>Rs. 850</h4>
+                                    </div>
+                                </div>
+                                <div class="menu-content-bottom">
+                                    <p>Pizza prepeared in four different sections, each layer representing a season</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card flex">
+                            <div class="menu-img-wrapper">
+                                <img src="/images/food/strawberry lemonade 2.jpg" alt="">
+                            </div>
+
+                            <div class="menu-content">
+                                <div class="menu-content-top flex flex-column">
+                                    <div class="menu-title-wrapper">
+                                        <h3>Strawberry Lemonade</h3>
+                                    </div>
+                                    <div class="menu-price-wrapper flex">
+                                        <span></span>
+                                        <h4>Rs. 400</h4>
+                                    </div>
+                                </div>
+                                <div class="menu-content-bottom">
+                                    <p>Fresh strawberries with water, agave, and a generous amount of lemon juice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider none"></div>
+
+                    <div class="menu-list-2">
+                        <div class="menu-card flex">
+                            <div class="menu-img-wrapper">
+                                <img src="/images/food/Salade de Chevre chaud.jpeg" alt="">
+                            </div>
+
+                            <div class="menu-content">
+                                <div class="menu-content-top flex flex-column">
+                                    <div class="menu-title-wrapper">
+                                        <h3>Salade de Chevre chaud</h3>
+                                    </div>
+                                    <div class="menu-price-wrapper flex">
+                                        <span></span>
+                                        <h4>Rs. 1650</h4>
+                                    </div>
+                                </div>
+                                <div class="menu-content-bottom">
+                                    <p>Salad mixed with goat cheese, mixed green, tomatoes & bacon</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card flex">
+                            <div class="menu-img-wrapper">
+                                <img src="/images/food/Opera Cake.jpg" alt="">
+                            </div>
+
+                            <div class="menu-content">
+                                <div class="menu-content-top flex flex-column">
+                                    <div class="menu-title-wrapper">
+                                        <h3>Opera Cake</h3>
+                                    </div>
+                                    <div class="menu-price-wrapper flex">
+                                        <span></span>
+                                        <h4>Rs. 1600</h4>
+                                    </div>
+                                </div>
+                                <div class="menu-content-bottom">
+                                    <p>Almond sponge cake filled with coffee buttercream & ganache</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card flex">
+                            <div class="menu-img-wrapper">
+                                <img src="/images/food/Iced Americano Black.jpg" alt="">
+                            </div>
+
+                            <div class="menu-content">
+                                <div class="menu-content-top flex flex-column">
+                                    <div class="menu-title-wrapper">
+                                        <h3>Iced Americano Black</h3>
+                                    </div>
+                                    <div class="menu-price-wrapper flex">
+                                        <span></span>
+                                        <h4>Rs. 350</h4>
+                                    </div>
+                                </div>
+                                <div class="menu-content-bottom">
+                                    <p>Espresso shots with a light layer of crema, then served over ice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="view-menu uppercase"><a href="/menu.html">View All Menu</a></button>
+            </section>
+
+            <section class="testimonials flex flex-column">
+                <div class="testimonials-card flex flex-column text-center active">
+                    <div class="quote">”</div>
+                    <p>An exceptional dining experience. The atmosphere was elegant and the menu was full of surprising
+                        and delicious flavors. Service was outstanding.</p>
+                    <div class="cube-wrapper flex">
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                    </div>
+                    <div class="reviewer-info flex flex-column">
+                        <div class="reviewer-img-wrapper"><img src="/images/testimonials/testi-avatar.jpg" alt=""></div>
+                        <div class="reviewer-name uppercase">John Doe</div>
+                    </div>
+
+                    <button class="read-more uppercase"><a href="reviews.html">Check Reviews</a></button>
+
+                </div>
+                <div class="testimonials-card flex flex-column text-center">
+                    <div class="quote">”</div>
+                    <p>This fine dining restaurant exceeded all expectations. The menu was diverse and every dish was
+                        expertly prepared and beautifully presented.</p>
+                    <div class="cube-wrapper flex">
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                    </div>
+                    <div class="reviewer-info flex flex-column">
+                        <div class="reviewer-img-wrapper"><img src="/images/testimonials/pexels-pixabay-220453.jpg"
+                                alt=""></div>
+                        <div class="reviewer-name uppercase">Joseph Lewis</div>
+                    </div>
+
+                    <button class="read-more uppercase"><a href="reviews.html">Check Reviews</a></button>
+
+                </div>
+                <div class="testimonials-card flex flex-column text-center">
+                    <div class="quote">”</div>
+                    <p>I was thoroughly impressed with the overall experience. The atmosphere was cozy and inviting,
+                        with warm lighting and a pleasant ambiance.</p>
+                    <div class="cube-wrapper flex">
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                    </div>
+                    <div class="reviewer-info flex flex-column">
+                        <div class="reviewer-img-wrapper"><img src="/images/testimonials/pexels-pixabay-415829.jpg"
+                                alt=""></div>
+                        <div class="reviewer-name uppercase">Jane Smith</div>
+                    </div>
+
+                    <button class="read-more uppercase"><a href="reviews.html">Check Reviews</a></button>
+
+                </div>
+
+            </section>
+
+            <section class="strength flex flex-column text-center">
+                <div class="strength-into flex flex-column">
+                    <h3 class="uppercase">Why Choose Us</h3>
+                    <div class="separator"></div>
+                    <h2 class="uppercase">Our Strength</h2>
+                </div>
+                <div class="strength-wrapper flex flex-column">
+                    <div class="strength-card card bdr-b-l-b-r-15 flex flex-column">
+                        <div class="strength-icon-wrapper"><img src="/images/strength/features-icon-1.png" alt=""></div>
+                        <div class="str-title">
+                            <h2>Hygienic Food</h2>
+                        </div>
+                        <div class="str-description">
+                            <p>We offer the highest-quality, hygienic dishes or cuisine, created with the freshest
+                                ingredients which goes under the surveillance of quality assurance staff.</p>
+                        </div>
+                    </div>
+                    <div class="strength-card card bdr-b-l-b-r-15 flex flex-column">
+                        <div class="strength-icon-wrapper"><img src="/images/strength/features-icon-2.png" alt=""></div>
+                        <div class="str-title">
+                            <h2>Fresh Environment</h2>
+                        </div>
+                        <div class="str-description">
+                            <p>Our restaurant's atmosphere encompasses everything from tangible elements , from decor to
+                                lightings to provide a fresh dining experience for our customers.</p>
+                        </div>
+                    </div>
+                    <div class="strength-card card bdr-b-l-b-r-15 flex flex-column">
+                        <div class="strength-icon-wrapper"><img src="/images/strength/features-icon-3.png" alt=""></div>
+                        <div class="str-title">
+                            <h2>Skilled Chefs</h2>
+                        </div>
+                        <div class="str-description">
+                            <p>To enhance the flavor of the food we provide to our customers, we have assembled a team
+                                of the most skilled as well as experienced chefs from all across the globe.</p>
+                        </div>
+                    </div>
+                    <div class="strength-card card bdr-b-l-b-r-15 flex flex-column">
+                        <div class="strength-icon-wrapper"><img src="/images/strength/features-icon-4.png" alt=""></div>
+                        <div class="str-title">
+                            <h2>Event & Party</h2>
+                        </div>
+                        <div class="str-subtitle">
+                            <p>We provide more than just eating; we also frequently organize parties, events, and other
+                                special occasions and set up specialized catering services for food/dishes.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="event flex flex-column text-center">
+                <div class="event-intro flex flex-column">
+                    <h3 class="uppercase">What's New</h3>
+                    <div class="separator"></div>
+                    <h2>Around The Corner</h2>
+                </div>
+                <div class="event-card-wrapper flex flex-column">
+                    <a href="/events/#cooking-class" class="event-card card bdr-b-l-b-r-15 block">
+                        <div class="event-img-wrapper bdr-b-l-b-r-15">
+                            <img src="/images/events/pexels-vân-lê-14639227.jpg" alt="">
+                            <time datetime="2023-03-03 20:00" title="March 3rd, 2023">03/03/2023</time>
+                        </div>
+                        <div class="event-content bdr-b-l-b-r-15 flex flex-column">
+                            <div class="event-title uppercase">
+                                <h2>Cooking Classes</h2>
+                            </div>
+
+                            <div class="event-subtitle">
+                                <p>Learn how to prepare dishes from our restaurant's menu</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/events/#wine-tasting" class="event-card card bdr-b-l-b-r-15 block">
+                        <div class="event-img-wrapper bdr-b-l-b-r-15">
+                            <img src="/images/events/pexels-nicolas-rizzon-4212194.jpg" alt="">
+                            <time datetime="2023-03-17 20:00" title="March 17th, 2023">17/03/2023</time>
+                        </div>
+                        <div class="event-content bdr-b-l-b-r-15 flex flex-column">
+                            <div class="event-title uppercase">
+                                <h2>Wine Tasting</h2>
+                            </div>
+
+                            <div class="event-subtitle">
+                                <p>Learn about pairing different wines with our restaurant's dishes</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/events/#chef-table" class="event-card card bdr-b-l-b-r-15 block">
+                        <div class="event-img-wrapper bdr-b-l-b-r-15">
+                            <img src="/images/events//pexels-mikhail-nilov-8093868.jpg" alt="">
+                            <time datetime="2023-04-01 20:00" title="April 1st, 2023">01/04/2023</time>
+                        </div>
+                        <div class="event-content bdr-b-l-b-r-15 flex flex-column">
+                            <div class="event-title uppercase">
+                                <h2>Chef's Table</h2>
+                            </div>
+
+                            <div class="event-subtitle">
+                                <p>Get a chance to watch the chef prepare your meal</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <button class="read-more uppercase"><a href="/events.html">Read More</a></button>
+            </section>
+        </main>
+
+        <%- include('partials/footer') %>
+    </div>
+    <script src="/javascript/nav.js"></script>
+    <script src="/javascript/index.js"></script>
+</body>
+
+</html>

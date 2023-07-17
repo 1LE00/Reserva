@@ -1,0 +1,60 @@
+<%- include('./partials/header') %>
+    <link rel="stylesheet" href="/css/admin.css">
+    </head>
+
+    <body>
+        <div class="container flex w-100">
+            <div class="primary-navbar invisible">
+                <%- include('./partials/primary-nav') %>
+            </div>
+            <main class="w-100" id="index-main">
+                <%- include('./partials/nav') %>
+                    <div class="content">
+                        <div class="heading">
+                            <h1 class="uppercase text-center"
+                                style="font-weight:600; letter-spacing: 5px; line-height: 1.5">Add Dishes
+                            </h1>
+                        </div>
+
+                        <div id="add-dishes" class="flex flex-column available-messages">
+                            <div class="card-view-options flex">
+                                <button class="launch-edit-modal">
+                                    <img src="/images/bars-solid.svg" alt="">
+                                </button>
+                                <button class="launch-delete-modal">
+                                    <img src="/images/table-solid.svg" alt="">
+                                </button>
+                            </div>
+                            <form action="/reserva/dishes/add" method="post" class="add-dish add flex flex-column" name="add-dish"
+                                id="add-dish" autocomplete="off">
+                                <div class="name-container">
+                                    <label for="name">Name:</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div class="description-container">
+                                    <label for="description">Description:</label>
+                                    <input type="text" name="description" id="description">
+                                </div>
+                                <div class="price-container">
+                                    <label for="price">Price:</label>
+                                    <input type="number" name="price" id="price">
+                                </div>
+                                <div class="image-path-container">
+                                    <label for="image-path">Image Path:</label>
+                                    <input type="text" name="imagePath" id="image-path"
+                                        placeholder="Should start with /images">
+                                </div>
+                                <div class="btn">
+                                    <button type="submit" name="edit" class="uppercase" id="edit">Add</button>
+                                    <button type="button" name="cancel" class="uppercase" id="cancel"
+                                        data-close-edit>Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+            </main>
+        </div>
+        <script src="/javascript/admin/index.js"></script>
+        <script src="/javascript/admin/addDish.js"></script>
+    </body>
+
+    </html>

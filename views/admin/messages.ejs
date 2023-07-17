@@ -1,0 +1,99 @@
+<%- include('./partials/header') %>
+    <link rel="stylesheet" href="/css/admin.css">
+    </head>
+
+    <body>
+        <div class="container flex w-100">
+            <div class="primary-navbar invisible">
+                <%- include('./partials/primary-nav') %>
+            </div>
+            <main class="w-100" id="index-main">
+                <%- include('./partials/nav') %>
+                    <div class="content">
+                        <div class="heading">
+                            <h1 class="uppercase text-center"
+                                style="font-weight:600; letter-spacing: 5px; line-height: 1.5">Received Messages
+                            </h1>
+                        </div>
+
+                        <% if (messages.length> 0) { %>
+                            <div id="available-messages" class="flex flex-column available-messages">
+                                <div class="card-view-options flex">
+                                    <button class="launch-edit-modal">
+                                        <img src="/images/bars-solid.svg" alt="">
+                                    </button>
+                                    <button class="launch-delete-modal">
+                                        <img src="/images/table-solid.svg" alt="">
+                                    </button>
+                                </div>
+                                <% for( let i=0; i < messages.length; i++ ) { %>
+                                    <div class="card w-100">
+                                        <div class="card-content flex flex-column">
+                                            <span id="<%= messages[i]._id %>" data-id="<%= messages[i]._id %>">
+                                                <span class="key">User ID:</span>
+                                                <span class="value" style="color: #5dade2">
+                                                    <%= messages[i]._id %>
+                                                </span>
+                                            </span>
+                                            <span>
+                                                <span class="key">Name:</span>
+                                                <span class="value" style="color:  #f1c40f">"<%= messages[i].name %>
+                                                        "</span>
+                                            </span>
+                                            <span>
+                                                <span class="key">Email:</span>
+                                                <span class="value" style="color: #27ae60">"<%= messages[i].email %>
+                                                        "</span>
+                                            </span>
+                                            <span>
+                                                <span class="key">Contact:</span>
+                                                <span class="value" style="color:#2980b9 ">
+                                                    <%= messages[i].contact %>
+                                                </span>
+                                            </span>
+                                            <span>
+                                                <span class="key">Message:</span>
+                                                <span class="value" style="color:  #27ae60">"<%= messages[i].message %>
+                                                        "</span>
+                                            </span>
+                                        </div>
+                                        <div class="card-actions available-messages-card-actions flex">
+                                            <button class="launch-delete-modal" data-id-holder="<%= messages[i]._id %>">
+                                                <img src="/images/trash-solid.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <% } %>
+                            </div>
+                            <% } else { %>
+                                <h2 class="uppercase text-center" style="font-weight:600; letter-spacing: 5px; line-height: 1.5">You
+                                    don't have any messages</h2>
+                                <% } %>
+                    </div>
+                    <div class="modal-container flex flex-column">
+                        <div class="modal-content w-100">
+                            <div class="delete-launch flex" style="display:none">
+                                <div class="action-confirmation-box del-action-confirmation-box flex flex-column w-100">
+                                    <h2 class="modal-heading w-100">Delete Message</h2>
+                                    <p class="modal-message del-ac-modal-message"></p>
+                                    <div class="btn flex">
+                                        <button id="del-ac-ok" class="uppercase">Yes</button>
+                                        <button id="del-ac-cancel" class="uppercase" data-cancel>No</button>
+                                    </div>
+                                </div>
+                                <div class="action-result-box del-action-result-box flex flex-column gone w-100">
+                                    <p class="modal-message del-ar-modal-message"></p>
+                                    <div class="btn flex">
+                                        <button id="del-ar-ok" class="uppercase">Okay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </main>
+        </div>
+        <script src="/javascript/admin/index.js"></script>
+        <script src="/javascript/admin/message.js"></script>
+    </body>
+
+    </html>

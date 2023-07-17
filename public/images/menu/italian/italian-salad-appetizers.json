@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Spuntini di pollo" ,
+        "description" : " Grilled marinated chicken -Fresh tomato, basil & red fillet strips with dipping onion sauce. " ,
+        "price" : "550" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Antiplasti Platter(veg/non veg)" ,
+        "description" : "'Imported Italian Cured Meats' Marinated roasted vegetables, olives & selection of cheeses" ,
+        "price" : "750" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Mezze Platter" ,
+        "description" : "Served with tabbouleh, hummus, tzatziki, olives & pita bread." ,
+        "price" : "550" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Insalata di Patata & Rapa Rossa" ,
+        "description" : "Potato salad with mustard cumin dressing, beetroot carpaccio, rocket & balsamico." ,
+        "price" : "300" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Gambas al Ajillo" ,
+        "description" : "Sauteed prawns w. chilli, coriander & tomato flavoured with lime & olive oil." ,
+        "price" : "950" ,
+        "imagePath" : ""
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "name" : "French Onion Soup" ,
+        "description" : "A classic French soup made with caramelized onions, beef broth, and a crouton topped with Gruyere cheese." ,
+        "price" : "1100" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Bisque" ,
+        "description" : "A creamy seafood soup, typically made from lobster or crab." ,
+        "price" : "950" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Soupe à l'oignon Gratinée" ,
+        "description" : "A variation of Soupe à l'oignon where a toast is put on the surface of the soup and then the grated Gruyère cheese is added on top and broiled." ,
+        "price" : "1690" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Soupe de poisson" ,
+        "description" : "Fish soup, commonly served in the coastal regions of France." ,
+        "price" : "750" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Potage" ,
+        "description" : "A thick vegetable soup, can be made with a variety of vegetables and served with croutons." ,
+        "price" : "850" , 
+        "imagePath" : ""
+    },
+    {
+        "name" : "Soupe De Potiron" ,
+        "description" : "A pumpkin soup, which is very popular in the fall season." ,
+        "price" : "950" ,
+        "imagePath" : ""
+    } 
+]

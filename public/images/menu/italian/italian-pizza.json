@@ -1,0 +1,62 @@
+[
+    {
+        "name" : "Cotto e Funghi" ,
+        "description" : "Mushroom, ham & extra virgin olive oil." ,
+        "price" : "950" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Dialova" ,
+        "description" : "Pepperoni & hot chillies." ,
+        "price" : "950" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Napoli" ,
+        "description" : "Anchovies, capers, oregano & extra virgin olive oil." ,
+        "price" : "900" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : " Quattro Stagioni" ,
+        "description" : "¼ artichoke, ¼ salami, ¼ mushroom & ¼ ham." ,
+        "price" : "850" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Frutti di Mare" ,
+        "description" : "Tuna, prawn, anchovies & extra virgin olive oil." ,
+        "price" : "1150" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Nepalitana" ,
+        "description" : "Pulled duck, tomato, ginger-garlic paste, onion & fresh coriander." ,
+        "price" : "1100" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Pesto Pizza" ,
+        "description" : "Cheese, Onion, cherry tomato, rocket leaves." ,
+        "price" : "1050" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" :"Marcopolo" ,
+        "description" : "Sun-dried tomato, hot salami, fresh tomato, olives, onion, roasted capsicum, feta & basil." ,
+        "price" : "1200" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Margherita" ,
+        "description" : "A typical Neapolitan pizza, made with San Marzano tomatoes, mozzarella cheese, fresh basil, salt, and extra-virgin olive oil." ,
+        "price" : "775" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Silicana" ,
+        "description" : "Grilled eggplant, garlic & extra virgin olive oil" ,
+        "price" : "850" ,
+        "imagePath" : ""
+    }
+]

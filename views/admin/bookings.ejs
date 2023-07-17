@@ -1,0 +1,114 @@
+<%- include('./partials/header') %>
+    <link rel="stylesheet" href="/css/admin.css">
+    </head>
+
+    <body>
+        <div class="container flex w-100">
+            <div class="primary-navbar invisible">
+                <%- include('./partials/primary-nav') %>
+            </div>
+            <main class="w-100" id="index-main">
+                <%- include('./partials/nav') %>
+                    <div class="content">
+                        <div class="heading">
+                            <h1 class="uppercase text-center"
+                                style="font-weight:600; letter-spacing: 5px; line-height: 1.5">
+                                <%= title %>
+                            </h1>
+                        </div>
+
+                        <% if (bookings.length > 0) { %>
+                            <div id="upcoming-reservations" class="flex flex-column upcoming-reservations">
+                                <div class="card-view-options flex">
+                                    <button class="launch-edit-modal">
+                                        <img src="/images/bars-solid.svg" alt="">
+                                    </button>
+                                    <button class="launch-delete-modal">
+                                        <img src="/images/table-solid.svg" alt="">
+                                    </button>
+                                </div>
+                                <% for( let i=0; i < bookings.length; i++ ) { %>
+                                    <div class="card w-100">
+                                        <div class="card-content flex flex-column">
+                                            <span id="<%= bookings[i].id %>" data-id="<%= bookings[i].id %>">
+                                                <span class="key">Booking ID:</span>
+                                                <span class="value" style="color: #d35400">
+                                                    <%= bookings[i].id %>
+                                                </span>
+                                            </span>
+                                            <span>
+                                                <span class="key">Name:</span>
+                                                <span class="value" style="color: #3498db">"<%= bookings[i].name %>
+                                                        "</span>
+                                            </span>
+                                            <span>
+                                                <span class="key">Email:</span>
+                                                <span class="value" style="color: #55abe5">"<%= bookings[i].email %>
+                                                        "</span>
+                                            </span>
+
+                                            <span>
+                                                <span class="key">Contact:</span>
+                                                <span class="value" style="color:#8e44ad ">
+                                                    <%= bookings[i].contact %>
+                                                </span>
+                                            </span>
+
+                                            <span>
+                                                <span class="key">Party Size:</span>
+                                                <span class="value" style="color: #5dade2">
+                                                    <%= bookings[i].numberOfGuest %>
+                                                </span>
+                                            </span>
+
+                                            <span>
+                                                <span class="key">Date:</span>
+                                                <span class="value" style="color: #27ae60">
+                                                    <%= bookings[i].date %>
+                                                </span>
+                                            </span>
+
+                                            <span>
+                                                <span class="key">Time:</span>
+                                                <span class="value" style="color: #229954">
+                                                    <%= bookings[i].time %>
+                                                </span>
+                                            </span>
+
+                                            <span>
+                                                <span class="key">Assigned Table:</span>
+                                                <span class="value" style="color: #f39c12">
+                                                    <%= bookings[i].assignedTable.tableNumber %>
+                                                </span>
+                                            </span>
+                                            <span>
+                                                <span class="key">Created At:</span>
+                                                <span class="value" style="color: #bdc3c7">
+                                                    <%= bookings[i].createdAt %>
+                                                </span>
+                                            </span>
+                                            <% if (bookings[i].updatedAt) { %>
+                                                <span>
+                                                    <span class="key">Updated At:</span>
+                                                    <span class="value" style="color: #95a5a6 ">
+                                                        <%= bookings[i].updatedAt %>
+                                                    </span>
+                                                </span>
+                                                <% } %>
+
+                                        </div>
+                                    </div>
+                                    <% } %>
+                            </div>
+                            <% } else { %>
+                                <h2 class="uppercase text-center" style="font-weight:600; letter-spacing: 5px; line-height: 1.5">No
+                                    Upcoming Reservations</h2>
+                                <% } %>
+                    </div>
+            </main>
+
+        </div>
+        <script src="/javascript/admin/index.js"></script>
+    </body>
+
+    </html>

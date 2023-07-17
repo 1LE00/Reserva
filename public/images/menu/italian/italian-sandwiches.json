@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "Vegan Panuozzo" ,
+        "description" : "Chickpeas-carrots patty herbs & chilli, almond mayonnaise, marinated eggplant & tomato confit." ,
+        "price" : "475" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Chicken Pesto Panini" ,
+        "description" : "Chicken, pesto, lettuce, sun-dried tomato." ,
+        "price" : "550" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "The Oriental" ,
+        "description" : "Pita pocket filled with shredded chicken souvlaki, chopped salad, onions, cabbage & garlic youghurt." ,
+        "price" : "425" , 
+        "imagePath" : ""
+    }
+]

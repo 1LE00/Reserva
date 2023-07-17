@@ -1,0 +1,27 @@
+
+[
+    {
+        "name" : "Minestrone di Verdure" ,
+        "description" : "Traditional vegetable soup with pesto & parmesan crostini." ,
+        "price" : "370" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Crema de Fungi zuppa" ,
+        "description" : "Blended button mushroom creamy soup." ,
+        "price" : "475" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Zuppa di Zucca" ,
+        "description" : "Pumpkin Soup" ,
+        "price" : "475" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Harira Soup" ,
+        "description" : "Mixed greens, fresh pulled mozzarella, garden basil, Hawaiian sea salt,extra virgin olive oil." ,
+        "price" : "370" ,
+        "imagePath" : ""
+    }
+]

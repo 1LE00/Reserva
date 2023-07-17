@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Chongqing Chicken" ,
+        "description" : " Stir-fried dish, which consists of marinated then deep-fried pieces of chicken, dried Sichuan chilli peppers, spicy bean paste, Sichuan peppers, garlic, and ginger." ,
+        "price" : "700" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Kung Pao Chicken" ,
+        "description" : "A spicy, stir-fried Chinese dish made with cubes of chicken, peanuts, vegetables, and chili peppers." ,
+        "price" : "850" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "General Tso's Chicken" ,
+        "description" : "A sweet and spicy deep-fried chicken dish that is served in North American Chinese restaurants." ,
+        "price" : "850" , 
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Sesame Chicken" , 
+        "description" : "Fried chicken served with a combination of honey, ketchup, soy sauce, garlic and sesame oil." ,
+        "price" : "800" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Chicken with cashew nuts" ,
+        "description" : "Chicken finished with roasted cashew and soy sauce, honey, rice wine vinegar, ginger, and Asian chili garlic sauce." ,
+        "price" : "900" ,
+        "imagePath" : ""
+    } 
+]

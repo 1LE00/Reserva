@@ -1,0 +1,86 @@
+<header class="top-header flex" data-top-header>
+    <a href="/" class="flex">
+        <img class="logo" src="/images/logo.svg" alt="logo">
+    </a>
+
+    <div class="nav invisible" data-nav-container>
+        <nav class="navbar invisible" data-primary-navbar>
+            <button class="close block" data-nav-toggle></button>
+            <a href="/" class="flex">
+                <img class="logo" src="/images/logo.svg" alt="logo">
+            </a>
+            <% if (loggedIn) { %>
+                <div class="username-holder flex">
+                    <span class="user-icon">
+                        <img style="display: inline" src="/images/login/user-regular.svg" width="20px" height="16px"
+                            alt="">
+                    </span>
+                    <a class="username uppercase" href="#user-dropdown">
+                        <%= username %>
+                    </a>
+                </div>
+                <% } %>
+                    <ul class="navbar-list uppercase">
+                        <li class="navbar-items"><a class="navbar-links block" href="/">Home</a></li>
+                        <li class="navbar-items"><a class="navbar-links block" href="/menu">Menu</a></li>
+                        <li class="navbar-items"><a class="navbar-links block" href="/about">About Us</a></li>
+                        <li class="navbar-items"><a class="navbar-links block" href="/contact-us">Contact</a></li>
+                        <li class="navbar-items"><a class="navbar-links block" href="/reservation">Reservation</a>
+                        </li>
+                        <% if (loggedIn) { %>
+                            <li id="user-dropdown-container" onclick="showUserDropDown()">
+                                <div class="username-holder-down flex">
+                                    <span class="user-icon">
+                                        <img style="display: inline" src="/images/login/user-regular.svg" width="20px"
+                                            height="16px" alt="">
+                                    </span>
+                                    <button class="username username-down uppercase">
+                                        <%= username %>
+                                    </button>
+                                    <span class="dropdown-icon" id="dropdown-icon">
+                                        <img style="display: inline" src="/images/icon-dropdown-indicator.svg" alt="">
+                                    </span>
+                                </div>
+                                <ul class="user-dropdown" id="user-dropdown">
+                                    <li class="navbar-items">
+                                        <a class="navbar-links block uppercase user-links" href="/user">View Account</a>
+                                    </li>
+                                    <li class="navbar-items">
+                                        <form action="/logout" method="post">
+                                            <button class="navbar-links block uppercase user-links w-100 text-left"
+                                                type="submit">Log Out</button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                            <% } else { %>
+                                <li id="login-link" class="navbar-items"><a class="navbar-links block"
+                                        href="/login">Login/Register</a>
+                                </li>
+                                <% } %>
+                    </ul>
+
+                    <div class="nav-footer flex flex-column">
+                        <div class="cube"></div>
+
+                        <div class="text-center">
+                            <h2 class="uppercase">Visit Us</h2>
+                            <address class="nav-footer-location">123 Main St, Anytown USA</address>
+                            <span class="nav-footer-opening-hrs block">Open: 8:00 am - 10:00 pm</span>
+                            <span class="nav-footer-mail block">restaurant@info.com</span>
+                            <div class="cube"></div>
+                            <h3 class="uppercase">Booking</h3>
+                            <span class="nav-footer-number">+1 123 456 7890</span>
+                        </div>
+
+                    </div>
+
+        </nav>
+    </div>
+    <button class="link-toggle" data-nav-toggle>
+        <span class="line line-one block"></span>
+        <span class="line line-two block"></span>
+        <span class="line line-three block"></span>
+    </button>
+
+</header>

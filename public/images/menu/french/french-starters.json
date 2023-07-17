@@ -1,0 +1,46 @@
+[
+    {
+        "name" : "Escargots" ,
+        "description" :  "Snails cooked in a butter and garlic sauce, often served in their shells." ,
+        "price" : "1350" ,
+        "imagePath" : "" 
+    },
+    {
+        "name" : "Paté " ,
+        "description" : "A spread made from liver, typically pork or duck, often flavored with herbs and spices." ,
+        "price" : "1650" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Rillettes" ,
+        "description" : "Shredded meat, such as pork or duck, that has been cooked in fat, then mashed and mixed with some of the fat." ,
+        "price" : "1300" , 
+        "imagePath" : ""
+    },
+    {
+        "name" : "Crostini" ,
+        "description" :"Grilled or toasted bread topped with various ingredients such as cheese, vegetables, or meat." ,
+        "price" : "950" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Tarte flambée" ,
+        "description" : "Thin pizza-like dough topped with crème fraîche, onions, and bacon." ,
+        "price" : "1250" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Soufflé" ,
+        "description" : "A light and airy savory or sweet dish made from egg yolks and whites and a variety of ingredients." , 
+        "price" : "1850" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Croquet-monsieur" ,
+        "description" : "A warm sandwich made of ham and cheese, typically Gruyere, that has been dipped in a mixture of eggs and milk, then fried." ,
+        "price" : "2850" ,
+        "imagePath" : "" 
+   }
+   
+   
+]

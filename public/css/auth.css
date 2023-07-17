@@ -1,0 +1,224 @@
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Reused styles end*/
+
+@media screen and (min-width: 320px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  #main {
+    width: 100%;
+    max-width: 400px;
+    min-height: 550px;
+    margin: 2rem;
+    padding-inline: 2rem;
+    justify-content: center;
+    background: rgba(5, 0, 0, 0.25);
+    box-shadow: 15px 15px 7px rgba(0, 0, 0, 0.8);
+  }
+  
+  .register-container {
+    padding-block: 4rem;
+  }
+
+  .form-container > a {
+    width: 90px;
+    height: 21px;
+    margin-inline: auto;
+  }
+
+  .form-container > h2 {
+    margin-block: 1.5rem;
+    line-height: 1;
+    letter-spacing: 5px;
+    font-weight: 600;
+  }
+
+  .form-container .message{
+    text-align: center;
+    color: hsl(var(--clr-error));
+    margin-block-end: 1.5rem;
+    font-size: 0.875rem
+  }
+  
+  .form-container .message span{
+    font-weight: 500;
+  }
+
+  .form-container,
+  .form > *:not(.forgot-password),
+  .holder {
+    width: 100%;
+  }
+
+  .form {
+    gap: 1rem;
+  }
+
+  .form > div > div:is(.icon-control){
+    position: relative;
+    gap: 0.5rem;
+    border-bottom: 1px solid hsl(var(--clr-primary));
+    overflow: hidden;
+    transition: 0.5s ease;
+    user-select: none;
+    width: 100%;
+  }
+
+  .form *:is(.icon-control) > *{
+    transition: 0.5s ease;
+  }
+
+  .form > div > *:is(.icon-control) > span > img{
+    -webkit-user-drag: none;
+  }
+
+  .form .icon-control:focus-within{
+    border-bottom-color: hsl(var(--clr-white));
+  }
+
+  .form .icon-control:focus-within > span:first-child{
+    transform: translatex(-30px);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .form .icon-control:focus-within > input{
+    transform: translateX(-20px);
+  }
+
+  .icon-control .eye-holder{
+    display: none;
+    position: absolute;
+    top : 7px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/login/eye-slash-regular.svg) no-repeat center;
+    background-size: contain;
+    border-radius: 50%;
+    transition: none;
+  }
+
+  .icon-control .eye-holder.unslash{
+    background: url(../images/login/eye-regular.svg) no-repeat center;
+  }
+
+  .form > div > span {
+    align-self: flex-start;
+  }
+
+  .form > a {
+    font-size: 0.75rem;
+    align-self: flex-start;
+  }
+
+  .form > a:hover{
+    color: hsl(var(--clr-primary));
+  }
+
+  input {
+    width: 100%;
+    padding-block: 0.5rem;
+    background: none;
+    color: hsl(var(--clr-white));
+    border: none;
+  }
+
+  input:focus-visible {
+    outline: none;
+  }
+
+  input::placeholder {
+    color: hsl(var(--clr-muted));
+    font-size: 0.85rem;
+    transition: 0.5s ease;
+  }
+
+  input:focus-within::placeholder{
+    color: hsl(var(--clr-white));
+    font-size: 0.65rem;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+
+  input[type="text"]:is(#fullname) {
+    text-transform: capitalize;
+  }
+
+  .error {
+    font-size: 0.75rem;
+    margin-block-start: 0.5rem;
+    color: hsl(var(--clr-error));
+    gap: 0.5rem;
+    display: none;
+  }
+
+  .error img {
+    width: 1rem;
+  }
+
+  .form > .btn {
+    width: auto;
+    align-self: flex-start;
+  }
+
+  .btn button {
+    padding: 0.5rem 1rem;
+    background-color: hsl(var(--clr-primary));
+    color: hsl(var(--clr-dark));
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px hsl(var(--clr-primary), 0.5);
+  }
+
+  .btn button:active {
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px hsl(var(--clr-dark));
+  }
+
+  .goto {
+    margin-block-start: 2rem;
+    font-size: 0.75rem;
+  }
+
+  .goto a {
+    color: hsl(var(--clr-primary));
+    text-decoration: underline;
+    margin-inline-start: 0.25rem;
+    cursor: pointer;
+    transition: 0.5ms ease-in;
+  }
+
+  .goto a:hover {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .icon-control .eye-holder, .icon-control .eye-holder.unslash{
+    top: 0;
+    width: 35.2px;
+    height: 35.2px;
+    background-size: 50%;
+  }
+
+  .icon-control .eye-holder:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+}

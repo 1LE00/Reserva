@@ -1,0 +1,44 @@
+[
+    {
+        "name" : "Chicken Momo" ,
+        "description" : "Stuffed dumpling filled with chicken mashed meat steamed" ,
+        "price" : "340/300/380" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Jhol Momo Chicken" ,
+        "description" : "Stuffed dumpling filled with chicken mashed meat steamed and served with broth soup" ,
+        "price" : "390" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Mutton Momo" ,
+        "description" : "Stuffed dumpling filled with mashed goat meat steam" , 
+        "price" :"520" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Jhol Mutton Momo" ,
+        "description" : "Stuffed dumpling filled with mashed goat steamed and served with broth soup" ,
+        "price" : "590" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Buff Momo" ,
+        "description" : "Stuffed dumpling filled with mashed buffalo meat steam" ,
+        "price" : "400" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Buff Jhol Momo" , 
+        "description" : "Stuffed dumpling filled with chicken mashed buffalo steamed and served with broth soup" ,
+        "price" : "450" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Paneer Momo" ,
+        "description" : "Stuffed dumpling filled with mashed goat meat." ,
+        "price" : "320" ,
+        "imagePath" : ""
+    }
+]

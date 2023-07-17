@@ -1,0 +1,56 @@
+[
+    { 
+        "name" : "Crème Brûlée" ,
+        "description" : "Dessert consisting of a rich custard base topped with a layer of hardened caramelized sugar." ,
+        "price" : "950" ,
+        "imagePath" : "" 
+    },
+    {
+        "name" : "Macarons" ,
+        "description" : "Delicate French cookies made from ground almonds, sugar, and egg whites, often filled with ganache or buttercream." ,
+        "price" : "450" ,
+        "imagePath" : "" 
+    },
+    {
+        "name" : "Éclairs" ,
+        "description" : "A classic French pastry made of choux dough filled with cream and topped with chocoalte icing" ,
+        "price" : "750" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Choux à la Crème" ,
+        "description" : "A small pastry made of choux dough filled with cream, often served as a dessert or a snack" ,
+        "price" : "1450" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Profiteroles" ,
+        "description" : "Small choux pastry balls filled with cream and topped with chocolate sauce" ,
+        "price" : "1700" ,
+        "imagePath" : ""
+    },
+    { 
+        "name" : "Mousse au Chocolat" ,
+        "description" : "A rich chocolate mousse made with cream and eggs" ,
+        "price" : "1650" , 
+        "imagePath" : ""
+    },
+    {
+        "name" : "Tarte aux Pommes", 
+        "description" : "A traditional French apple tart made with a flaky pastry crust and thinly sliced apples." ,
+        "price" : "850" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Opera Cake" ,
+        "description" : "A multi-layered French cake made with layers of almond sponge cake, coffee buttercream, and chocolate ganache." ,
+        "price" : "1600" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Crème Caramel" ,
+        "description" : "A custard dessert with a layer of soft caramel on top" ,
+        "price" : "650" ,
+        "imagePath" : ""
+    }
+]

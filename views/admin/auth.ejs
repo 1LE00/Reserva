@@ -1,0 +1,81 @@
+<%- include('../partials/header') %>
+    <link rel="stylesheet" href="/css/auth.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    </head>
+
+    <body>
+        <main id="main" class="flex flex-column">
+            <div class="login-container flex flex-column holder" id="login-container">
+                <div class="form-container login-form-container">
+                    <a href="/" class="text-center block">
+                        <img class="logo inline-block" src="/images/logo.svg" alt="logo">
+                    </a>
+                    <h2 class="uppercase text-center">Sign In</h2>
+                    <% if (message.length> 0) { %>
+                        <div class="message" style="margin-block-start: 1.5rem">
+                            <p><span>
+                                    <%= message %>
+                                </span></p>
+                        </div>
+                        <% } %>
+                            <form action="/reserva/auth/admin/verify" method="post" name="login-form" id="login-form"
+                                class="form login-form flex flex-column" autocomplete="off">
+                                <div class="login-email-container flex flex-column">
+                                    <div class="login-email flex icon-control">
+                                        <span class="email-icon">
+                                            <img src="/images/login/icon-email.svg" width="20px" height="16px" alt="">
+                                        </span>
+                                        <input type="text" name="username" id="login-email" placeholder="Email"
+                                            data-login-fields <% if (loginUsername=='' ) { %>
+                                        value="<%= 'admin@reserva.com' %>">
+                                            <% } else { %>
+                                                value="<%= loginUsername %>">
+                                                    <% } %>
+                                    </div>
+                                    <span class="error flex login-email-error">
+                                        <img src="/images/circle-exclamation-solid.svg" alt="">
+                                        <span class="err-msg"></span>
+                                    </span>
+                                </div>
+
+                                <div class="login-password-container flex flex-column">
+                                    <div class="login-password flex icon-control">
+                                        <span class="password-icon">
+                                            <img src="/images/login/key-solid.svg" width="20px" height="16px" alt="">
+                                        </span>
+                                        <input type="password" name="password" id="login-password"
+                                            placeholder="Password" <% if (loginPassword=='' ) { %>
+                                        value="<%= '123456' %>"
+                                            <% } else { %>
+                                                value="<%= loginPassword %>"
+                                                    <% } %> maxlength="20" data-password data-login-fields>
+                                                        <span class="eye-holder"></span>
+                                    </div>
+                                    <span class="error login-password-error none flex">
+                                        <img class="inline" src="/images/circle-exclamation-solid.svg" alt="">
+                                        <span class="err-msg"></span>
+                                    </span>
+                                </div>
+
+                                <div class="btn login-btn">
+                                    <button type="submit">Log In</button>
+                                </div>
+                            </form>
+                </div>
+            </div>
+        </main>
+        <script>
+            const fields = document.querySelectorAll("[data-login-fields]");
+            fields.forEach(field => {
+                field.addEventListener("input", () => {
+                    const message = document.querySelector(".message");
+                    if (message != null) {
+                        message.innerHTML = '';
+                    }
+                });
+            })
+        </script>
+        <script src="/javascript/login.js"></script>
+    </body>
+
+    </html>

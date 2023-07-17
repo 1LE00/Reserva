@@ -1,0 +1,26 @@
+[
+   {
+        "name" : "Jimbu Thakali Thali" ,
+        "description" : "Locally grown rice with dal imported from lower regions to the south ,vegetables & ghee, along with chicken, mutton or fish" ,
+        "price" : "500" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Dhido Thali" ,
+        "description" : "Dish prepared by gradually adding flour to boiling water while stirring served with different vegetables and chicken or goat curry." ,
+        "price" : "700" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Royal Briyani" ,
+        "description" : "Mixed rice dish made with Indian spices, rice and meat.",
+        "price" : "1500" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Tandoori duo Chicken n Lamb" ,
+        "description" : "Fusion of tandoori specialties: chicken tikka, lamb tikka, chicken seekh kabob, lamb seekh kabob, tandoori chicken" ,
+        "price" : "2100",
+        "imagePath" : ""
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Crispy Brussel Sprouts" ,
+        "description" : "Spreaded Brussels sprouts in a single layer on a baking sheet and heated till hot and crispy." ,
+        "price" : "600" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Crispy Okra" ,
+        "description" : "Pods are sliced and coated in seasoned cornmeal, then fried until golden and crispy in this simple Southern classic!" ,
+        "price" : "550" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Sauteed Spinach" ,
+        "description" : "A dish of fresh or frozen spinach sauteed in olive oil, often with minced garlic" ,
+        "price" : "350" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Naan" ,
+        "description" : "Leavened, oven-baked or tawa-fried flatbread" ,
+        "price" : "260" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Roti" ,
+        "description" : "A round flatbread native to the Indian subcontinent" ,
+        "price" : "200" ,
+        "imagePath" : ""
+    }
+]

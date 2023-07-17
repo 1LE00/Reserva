@@ -1,0 +1,108 @@
+<%- include('../partials/header') %>
+    <link rel="stylesheet" href="/css/user.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <%- include('../partials/nav') -%>
+                <main class="main flex bd flex-column" id="main">
+                    <div class="page-left bd w-100">
+                        <div class="page-left-content bd flex flex-column">
+                            <nav class="secondary-nav bd flex">
+                                <%- include('../user/user-nav') %>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="page-right bd w-100">
+                        <div class="page-right-content bd flex flex-column">
+                            <div class="waitlist content-holder flex flex-column text-center"
+                                id="waitlist-content" data-content-holder>
+                                <div class="title">
+                                    <h1 class="uppercase" style="font-weight:600; letter-spacing: 5px; line-height: 1.5">Waitlists</h1>
+                                </div>
+                                <% if (waitlists.length> 0) { %>
+                                    <div id="bookings-table" class="flex bh">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>Contact</th>
+                                                    <th>Party Size</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th style="min-width: 50px">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <% for( let i=0; i < waitlists.length; i++ ) { %>
+                                                    <tr id="<%= waitlists[i].id %>" data-id="<%= waitlists[i].id %>">
+                                                        <td>
+                                                            <%= waitlists[i].id %>
+                                                        </td>
+                                                        <td>
+                                                            <%= waitlists[i].name %>
+                                                        </td>
+                                                        <td>
+                                                            <%= waitlists[i].email %>
+                                                        </td>
+                                                        <td>
+                                                            <%= waitlists[i].contact %>
+                                                        </td>
+                                                        <td>
+                                                            <%= waitlists[i].numberOfGuest %>
+                                                        </td>
+                                                        <td>
+                                                            <%= waitlists[i].date %>
+                                                        </td>
+                                                        <td>
+                                                            <%= waitlists[i].time %>
+                                                        </td>
+                                                        <td class="actions-table-data">
+                                                            <div class="actions">
+                                                                <button class="launch-delete-modal"
+                                                                    data-id-holder="<%= waitlists[i].id %>">
+                                                                    <img src="/images/trash-solid.svg" alt="">
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <% } %>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <% } else { %>
+                                        <h2 class="uppercase"
+                                            style="font-weight:600; letter-spacing: 5px; line-height: 1.5">You have not been included in any waitists.</h2>
+                                        <% } %>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-container flex flex-column">
+                        <div class="modal-content">
+                            <div class="action-confirmation-box flex flex-column">
+                                <h2 class="modal-heading w-100"></h2>
+                                <p class="modal-message ac-modal-message"></p>
+                                <div class="btn flex">
+                                    <button id="ac-ok" class="uppercase">Yes</button>
+                                    <button id="ac-cancel" class="uppercase">No</button>
+                                </div>
+                            </div>
+                            <div class="action-result-box flex flex-column gone">
+                                <p class="modal-message ar-modal-message"></p>
+                                <div class="btn flex">
+                                    <button id="ar-ok" class="uppercase">Okay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+        </div>
+        <script src="/javascript/nav.js"></script>
+        <script src="/javascript/user/nav.js"></script>
+        <script src="/javascript/user/waitlist.js"></script>
+    </body>
+
+    </html>

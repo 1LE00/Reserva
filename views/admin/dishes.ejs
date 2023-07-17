@@ -1,0 +1,151 @@
+<%- include('./partials/header') %>
+    <link rel="stylesheet" href="/css/admin.css">
+    </head>
+
+    <body>
+        <div class="container flex w-100">
+            <div class="primary-navbar invisible">
+                <%- include('./partials/primary-nav') %>
+            </div>
+            <main class="w-100" id="index-main">
+                <%- include('./partials/nav') %>
+                    <div class="content">
+                        <div class="heading">
+                            <h1 class="uppercase text-center"
+                                style="font-weight:600; letter-spacing: 5px; line-height: 1.5">List Of Dishes
+                            </h1>
+                        </div>
+
+                        <% if (dishes.length> 0) { %>
+                            <div id="available-dishes" class="flex flex-column available-dishes">
+                                <div class="card-view-options flex">
+                                    <button class="launch-edit-modal">
+                                        <img src="/images/bars-solid.svg" alt="">
+                                    </button>
+                                    <button class="launch-delete-modal">
+                                        <img src="/images/table-solid.svg" alt="">
+                                    </button>
+                                </div>
+
+                                <% for (let i=0; i < dishes.length; i++) { %>
+                                    <div class="card w-100">
+                                        <div class="card-content flex flex-column">
+                                            <span class="w-100 img-wrapper">
+                                                <img src="<%= dishes[i].imagePath %>" alt="<%= dishes[i].name %>"
+                                                    width="100" height="80">
+                                            </span>
+                                            <span id="<%= dishes[i].id %>" data-id="<%= dishes[i].id %>">
+                                                <span class="key">Dish ID:</span>
+                                                <span class="value" style="color: #d35400">
+                                                    <%= dishes[i]._id %>
+                                                </span>
+                                            </span>
+                                            <span>
+                                                <span class="key">Name:</span>
+                                                <span class="value" style="color: #3498db;text-transform: capitalize">
+                                                    "<%= dishes[i].name %>"
+                                                </span>
+                                            </span>
+                                            <span>
+                                                <span class="key">Description:</span>
+                                                <span class="value" style="color: #27ae60">
+                                                    "<%= dishes[i].description %>"
+                                                </span>
+                                            </span>
+                                            <span>
+                                                <span class="key">Price:</span>
+                                                <span class="value" style="color: #f39c12">Rs: <%= dishes[i].price %>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="card-actions available-dishes-card-actions flex">
+                                            <button class="launch-edit-modal" data-id-holder="<%= dishes[i]._id %>">
+                                                <img src="/images/pen-to-square-regular.svg" alt="">
+                                            </button>
+                                            <button class="launch-delete-modal" data-id-holder="<%= dishes[i]._id %>">
+                                                <img src="/images/trash-solid.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <% } %>
+                            </div>
+                            <% } else { %>
+                                <h2 class="uppercase" style="font-weight:600; letter-spacing: 5px; line-height: 1.5">No
+                                    Upcoming
+                                    Reservations Yet</h2>
+                                <div class="navigate">
+                                    <p>Go to <a href="/reservation"
+                                            style="color: hsl(var(--clr-primary))">Reservation</a> to
+                                        make a
+                                        booking.</p>
+                                </div>
+                                <% } %>
+                    </div>
+                    <div class="modal-container flex flex-column">
+                        <div class="modal-content w-100">
+                            <div class="edit-launch flex" style="display: none;">
+                                <div class="action-confirmation-box ed-action-confirmation-box flex flex-column w-100">
+                                    <h2 class="modal-heading w-100">Edit Reservation</h2>
+                                    <p class="modal-message ed-ac-modal-message"></p>
+                                    <div class="btn flex">
+                                        <button id="ed-ac-ok" class="uppercase">Yes</button>
+                                        <button id="ed-ac-cancel" class="uppercase" data-cancel>No</button>
+                                    </div>
+                                </div>
+                                <div class="action-result-box ed-action-result-box flex flex-column gone w-100">
+                                    <p class="modal-message ed-ar-modal-message"></p>
+                                    <div class="btn flex">
+                                        <button id="ed-ar-ok" class="uppercase">Okay</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delete-launch flex" style="display:none">
+                                <div class="action-confirmation-box del-action-confirmation-box flex flex-column w-100">
+                                    <h2 class="modal-heading w-100">Cancel Reservation</h2>
+                                    <p class="modal-message del-ac-modal-message"></p>
+                                    <div class="btn flex">
+                                        <button id="del-ac-ok" class="uppercase">Yes</button>
+                                        <button id="del-ac-cancel" class="uppercase" data-cancel>No</button>
+                                    </div>
+                                </div>
+                                <div class="action-result-box del-action-result-box flex flex-column gone w-100">
+                                    <p class="modal-message del-ar-modal-message"></p>
+                                    <div class="btn flex">
+                                        <button id="del-ar-ok" class="uppercase">Okay</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="reserva/dishes/:id" method="post" style="display: none"
+                                class="edit-dish edit flex flex-column" name="edit-dish"edit  id="edit-dish"
+                                autocomplete="off">
+                                <img src="/images/icon-close.svg" alt="close" id="edit-close"
+                                    style="align-self:flex-end;cursor: pointer" data-close-edit>
+                                <h2 class="uppercase" style="letter-spacing: 2px;">Edit Dish</h2>
+                                <div class="name-container">
+                                    <label for="name">Name:</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div class="description-container">
+                                    <label for="description">Description:</label>
+                                    <input type="text" name="description" id="description">
+                                </div>
+                                <div class="price-container">
+                                    <label for="price">Price:</label>
+                                    <input type="number" name="price" id="price">
+                                </div>
+                                <div class="btn">
+                                    <button type="submit" name="edit" class="uppercase" id="edit">Edit</button>
+                                    <button type="button" name="cancel" class="uppercase" id="cancel"
+                                        data-close-edit>Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </main>
+        </div>
+
+        <script src="/javascript/admin/index.js"></script>
+        <script src="/javascript/admin/dishes.js"></script>
+    </body>
+
+    </html>

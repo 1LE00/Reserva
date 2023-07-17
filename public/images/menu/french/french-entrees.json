@@ -1,0 +1,50 @@
+[
+    {
+        "name" : "Coq au Vin" ,
+        "description" : "Chicken cooked in red wine, typically served with mushrooms, onions, and bacon"  ,
+        "price" : "3300" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Beef Bourguigno(serves four)",
+        "description" : "Beef stewed in red wine, typically served with carrots, onions, and mushrooms." , 
+        "price" : "2500" , 
+        "imagePath" : ""
+    },
+    {
+        "name" : "Cassoulet" , 
+        "description" : "A fish stew originating from Provence, typically made with a variety of fish and shellfish, tomatoes, and herbs." ,
+        "price" : "4100(serves four)" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Confit De Canard" ,
+        "description" : "Duck leg cooked in its own fat and served with a variety of sides such as roasted potatoes or green beans." ,
+        "price" : "5600(two ducks)" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Soufflé" ,
+        "description" : "A light and airy savory or sweet dish made from egg yolks and whites and a variety of ingredients." ,
+        "price" : "2100" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Ratatouille" ,
+        "description" : "A stewed vegetable dish, typically made with eggplant, zucchini, bell peppers, tomatoes, and herbs." , 
+        "price" : "1850" , 
+        "imagePath" : ""
+    },
+    {
+        "name" : "Tarte Tatin(10 tarts, 4.2 oz each)" , 
+        "description" : "A French sweet pastry made by caramelizing sugar with butter, then adding apples and topping with pastry crust." ,
+        "price" : "3850" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Quiche " , 
+        "description" : "A savory custard tart filled with cheese, vegetables, or meat." , 
+        "price" : "3600" , 
+        "imagePath" : ""
+    }
+]

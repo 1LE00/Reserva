@@ -1,0 +1,311 @@
+@media screen and (min-width: 320px) {
+  body {
+    display: block;
+  }
+
+  .top-header {
+    position: fixed;
+    padding-block: 2rem 1.75rem;
+  }
+
+  /* Hero section starts*/
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 490px;
+    padding: 8rem 2rem 5rem;
+    background: url(../images/interior/pexels-rachel-claire-4577179.jpg)
+      no-repeat center;
+    background-size: cover;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(5, 0, 0, 0.25);
+    z-index: 1;
+  }
+
+  .hero-container {
+    position: relative;
+    gap: 2rem;
+    z-index: 2;
+  }
+
+  .hero-container .hero-label {
+    font: 700 clamp(var(--fs-200), 2.5vw, var(--fs-300)) / 2 var(--ff-serif);
+    letter-spacing: 8px;
+    color: hsl(var(--clr-primary));
+  }
+
+  .hero-container .hero-title {
+    font: 600 clamp(var(--fs-600), 8vw, 4rem) / 1.2 var(--ff-serif);
+    letter-spacing: 7px;
+  }
+
+  .hero-container .hero-subtitle {
+    font: 500 clamp(var(--fs-300), 2vw, 1.25rem) var(--ff-sans-normal);
+  }
+  /* Hero section ends  */
+
+  /* Belief section starts */
+  .belief {
+    position: relative;
+    background: url(../images/story/belief.jpg) no-repeat center;
+    background-size: cover;
+    padding: 5rem clamp(2rem, 10.5vw, 15rem);
+    gap: 3rem;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .belief::before,
+  .belief::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+  }
+
+  .belief::before {
+    inset: 0;
+    background: url(../images/story/about-us-bg.svg) fixed no-repeat center;
+    background-size: cover;
+  }
+
+  .belief::after {
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 115px;
+    background: url(../images/transparent/shape-8.png) no-repeat center;
+  }
+
+  .belief h2 {
+    font: 400 clamp(1.75rem, 7vw, var(--fs-500)) / 1.5 var(--ff-serif);
+    letter-spacing: 2px;
+  }
+
+  .belief-subtitle,
+  .belief-subtitle > article {
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .belief-subtitle > article > p {
+    font-size: clamp(var(--fs-400), 2vw, 1.25rem);
+    color: hsl(var(--clr-muted));
+    letter-spacing: 1px;
+  }
+
+  /* Belief section ends */
+
+  /* Story section starts */
+  .story {
+    position: relative;
+    background: hsl(var(--clr-dark)) url(../images/story/about-us-bg.svg)
+      no-repeat center fixed;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .story::before {
+    bottom: -15px;
+    left: 0;
+    background: url(../images/transparent/shape-1.png) no-repeat;
+    animation: offerBefore 5s ease-in infinite alternate;
+  }
+
+  .story::after {
+    top: -15px;
+    right: 0;
+    background: url(../images/transparent/shape-2.png) no-repeat;
+    animation: offerAfter 5s ease-in infinite alternate;
+  }
+
+  .story::before,
+  .story::after {
+    content: "";
+    position: absolute;
+    width: clamp(12.5rem, 25vw + 1rem, 25rem);
+    height: clamp(12.5rem, 25vw + 1rem, 25rem);
+    background-size: contain;
+    z-index: -1;
+  }
+
+  @keyframes offerBefore {
+    0% {
+      bottom: -15px;
+    }
+    100% {
+      bottom: 40px;
+    }
+  }
+
+  @keyframes offerAfter {
+    0% {
+      top: -15px;
+    }
+    100% {
+      top: 30px;
+    }
+  }
+
+  .story-header {
+    gap: 1rem;
+    padding: 3rem 2rem;
+  }
+
+  .story-header > h3 {
+    font: 400 clamp(var(--fs-200), 2.5vw, var(--fs-300)) / 2 var(--ff-serif);
+    letter-spacing: 5px;
+  }
+
+  .story-header > h2 {
+    font: 400 clamp(var(--fs-700), 3vw, var(--fs-500)) / 1.5 var(--ff-serif);
+    letter-spacing: 2px;
+  }
+
+  .story-bottom {
+    width: 100%;
+    gap: 3rem;
+    padding: 0 2rem 3rem;
+  }
+
+  .story-bottom-left,
+  .story-bottom-right {
+    gap: 3rem;
+  }
+
+  .story-bottom p {
+    font-size: clamp(var(--fs-400), 2vw, 1.25rem);
+    color: hsl(var(--clr-muted));
+  }
+
+  .story-bottom > .story-bottom-right {
+    flex-direction: column-reverse;
+  }
+
+  .story-bottom-right-container > h2 {
+    font: 400 clamp(var(--fs-600), 2.6vw, var(--fs-500)) / 1.5 var(--ff-serif);
+    letter-spacing: 3px;
+    margin-block-end: 2rem;
+  }
+
+  .stats {
+    gap: 3rem;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  .stats > .stats-item {
+    gap: 0.5rem;
+    flex: 1 0 173px;
+  }
+
+  .stats > .stats-item > .stats-number {
+    color: hsl(var(--clr-primary));
+    font: 400 var(--fs-500) / 1.5 var(--ff-serif);
+  }
+
+  .stats > .stats-item > .stats-text {
+    font: 400 var(--fs-700) / 1.5 var(--ff-serif);
+  }
+
+  .story-img-container {
+    position: relative;
+    max-height: 586px;
+    overflow: hidden;
+  }
+
+  .story-img-container > img {
+    height: auto;
+  }
+
+  /* Story section ends */
+}
+
+@media screen and (min-width: 458px) {
+  .story-bottom-right-container > h2 {
+    margin-block-end: 1rem;
+  }
+
+  .stats {
+    gap: 0;
+  }
+
+  .stats > .stats-item:first-child {
+    background: url(../images/story/vertical-separator.svg) no-repeat center
+      right;
+  }
+}
+
+@media screen and (min-width: 624px) {
+  .story-bottom {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .story-bottom p {
+    position: relative;
+    max-width: 550px;
+    z-index: 1;
+  }
+
+  .story-bottom p::before {
+    content: "";
+    position: absolute;
+    top: -182px;
+    left: 0;
+    width: 197px;
+    height: 194px;
+    background: url(../images/transparent/shape-3.png) no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  .story-bottom-left,
+  .story-bottom-right {
+    width: 50%;
+    max-width: 520px;
+  }
+
+  .stats > .stats-item {
+    flex: 1 0 128px;
+  }
+
+  .stats > .stats-item:nth-child(2) {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .stats > .stats-item:first-child {
+    padding-inline: 1.5rem;
+  }
+
+  .nav-list > li > a,
+  .social-links > li > a {
+    margin-inline: min(5.6rem, 4.9rem + 1vw);
+  }
+}
+
+@media screen and (min-width: 895px) {
+  .stats > .stats-item:nth-child(2) {
+    background: url(../images/story/vertical-separator.svg) no-repeat center
+      right;
+  }
+}
+
+@media screen and (min-width: 966px) {
+  .stats > .stats-item:last-child {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .belief::after {
+    left: 40px;
+  }
+}

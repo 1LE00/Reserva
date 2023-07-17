@@ -1,0 +1,38 @@
+[
+    {
+        "name" : "Salade Niçoise" ,
+        "description" : "A salad with tuna, eggs, and vegetables such as tomatoes, green beans, and olives." ,
+        "price" : "1250" , 
+        "imagePath" : ""
+    },
+    {
+        "name" : "Frisée aux Lardons" ,
+        "description" : "A salad with frisée lettuce, bacon, and a warm poached egg." ,
+        "price" : "1200" , 
+        "imagePath" : ""
+    },
+    {
+        "name" : "Caesar Salad" , 
+        "description" : "French version of the classic salad invented by Caesar Cardini in Tijuana, Mexico in 1924" , 
+        "price" : "650" , 
+        "imagePath" : ""
+    },
+    {
+        "name" : "Salade de Betterave" ,
+        "description" : "A salad made with cooked beets, often combined with other ingredients such as goat cheese, walnuts, or arugula." ,
+        "price" : "650" ,
+        "imagePath" : ""
+       },
+       {
+        "name" : "Salade de Chevre chaud" ,
+        "description" : " A warm salad made with goat cheese, often combined with other ingredients such as mixed greens, tomatoes, or bacon." ,
+        "price" : "1650" ,
+        "imagePath" : ""
+       },
+       { 
+        "name" : "Salade de Poulet" , 
+        "description" : "A salad made with chicken, often combined with other ingredients such as mixed greens, tomatoes, or bacon." ,
+        "price" : "1400" , 
+        "imagePath" : "" 
+    }
+]

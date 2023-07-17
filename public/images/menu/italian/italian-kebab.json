@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "Sis Tavuk",
+        "description" : "Yoghurt marinated grilled chicken cubes." ,
+        "price" : "600" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Mashwi Kebab" ,
+        "description" : "Minced lamb, garlic-onion paste, chilli & ginger." ,
+        "price" : "1550" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Paneer & Vegetable Kebab" ,
+        "description" : " Minced Paneer & vegetables cooked with garlic-onion paste. " ,
+        "price" : "650" ,
+        "imagePath": ""
+    },
+    {
+        "name" : "Prawn Kebab" ,
+        "description" : "Prawn marinated w/ garlic, lime & basil yoghurt." ,
+        "price" : "1100" ,
+        "imagePath" : ""
+    }
+]

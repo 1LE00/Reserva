@@ -1,0 +1,56 @@
+[
+    {
+        "name" : "Seafood Casserola" ,
+        "description" : "Fresh flounder, shrimp, sea scallops, and crab meat." ,
+        "price" : "650" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Sweet & Sour Fish Fillet" ,
+        "description" : "Fish cooked in pineapple juice, soy sauce, brown sugar , tilapia fillets." ,
+        "price" : "650" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Hunan Shrimp" ,
+        "description" : "A hot and spicy shrimp dish packed with flavor from chili bean paste, garlic, soy sauce, and rice vinegar." ,
+        "price" : "1580" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Szechuan Shrimp" ,
+        "description" : "Prawns with dry red chillies, peppercorns and other vegetables alongside the meat. " ,
+        "price" : "1580" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "General Tso's Shrimp" ,
+        "description" : "Chicken served with rice vinegar, soy sauce, hoisin sauce, water, sugar, and some corn starch to thicken the sauce." ,
+        "price" : "1650" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Scallops w. Mixed Vegetables" ,
+        "description" : "Scallops cooked with carrot, red bell pepper , garlic and other vegetables." ,
+        "price" : "1400" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Scallops w. Black Bean Sauce" ,
+        "description" : "Scallops cooked with black beans , garlic, ginger, soy and oysters sauce." ,
+        "price" : "1580" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Scallops w. Hot Garlic Sauce" ,
+        "description" : "Scallops cooked with unsalted butter and minced garlic cloves." ,
+        "price" : "1580" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Kung Pao Squid" ,
+        "description" : "Squid stir fried served with sauce made from hot dried Chile Peppers, onions, garlic and salt." ,
+        "price" : "1750" ,
+        "imagePath" : ""
+    }
+]

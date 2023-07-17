@@ -1,0 +1,50 @@
+[
+    {
+        "name" : "Ma Po Tofu" ,
+        "description" : "Tofu set in a spicy sauce, typically a thin, oily, and bright red suspension, based on douban, and douchi, along with minced meat, traditionally beef." ,
+        "price" : "450" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Kung Pao Tofu" ,
+        "description" : "Tofu served with crunchy cashews and lots of veggies." ,
+        "price" : "450" ,
+        "imagePath" : ""
+    } , 
+    { 
+        "name" :"Kung Pao Bean Curd" ,
+        "description" : " Bean curd with rice" ,
+        "price" : "550" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Szechuan Bean Curd" ,
+        "description" : "Raw shredded bean curd, bean sprouts, carrots, and onions" ,
+        "price" : "600" , 
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Sauteed Mixed Vegetables" ,
+        "description" : "Mix vegetables cooked over large saute pan with live oil and large garlic cloves." ,
+        "price" : "350" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Sauteed Snow Peas & Mushroom" , 
+        "description" : "Colorful, crunchy snow peas & mushrooms are lightly sautéed in butter and garlic." ,
+        "price" : "400" , 
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Bok Choy w. Garlic" ,
+        "description" : "Garlic , shallot cooked with bok choy and soy sauce.",
+        "price" : "330" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Shredded Potatoes" ,
+        "description" : "Potatoes mashed and air fried with spicy garnishing." ,
+        "price" : "250" ,
+        "imagePath" : ""
+        }
+]

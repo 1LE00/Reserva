@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "Pâté en croute" ,
+        "description" : "Pâté en croute is a traditional dish made with meat pâté that is gently wrapped in a pastry cover, then baked",
+        "price" : "3800" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Foie Gras" ,
+        "description" : "A specialty food product made of the liver of a duck or goose" ,
+        "price" : "2250" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Crêpes" ,
+        "description" : "A very thin type of pancake. Crêpes are usually one of two varieties: sweet crêpes or savoury galettes. " ,
+        "price" : "1050" ,
+        "imagePath" : "" 
+    }
+]

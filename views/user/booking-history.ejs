@@ -1,0 +1,94 @@
+<%- include('../partials/header') %>
+    <link rel="stylesheet" href="/css/user.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <%- include('../partials/nav') -%>
+                <main class="main flex bd flex-column" id="main">
+                    <div class="page-left bd w-100">
+                        <div class="page-left-content bd flex flex-column">
+                            <nav class="secondary-nav bd flex">
+                                <%- include('../user/user-nav') %>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="page-right bd w-100">
+                        <div class="page-right-content bd flex flex-column">
+                            <div class="booking-history content-holder flex flex-column text-center"
+                                id="booking-history-content" data-content-holder>
+                                <div class="title">
+                                    <h1 class="uppercase" style="font-weight:600; letter-spacing: 5px; line-height: 1.5">booking history</h1>
+                                </div>
+                                <% if (bookings.length> 0) { %>
+                                    <div class="sub-title">
+                                        <h2 class="uppercase" style="font-weight:600; letter-spacing: 5px; line-height: 1.5">Your Bookings</h2>
+                                    </div>
+
+                                    <div id="bookings-table" class="flex bh">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>Contact</th>
+                                                    <th>Party Size</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>Table No.</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <% for( let i=0; i < bookings.length; i++ ) { %>
+                                                    <tr id="<%= bookings[i].id %>" data-id="<%= bookings[i].id %>">
+                                                        <td>
+                                                            <%= bookings[i].id %>
+                                                        </td>
+                                                        <td>
+                                                            <%= bookings[i].name %>
+                                                        </td>
+                                                        <td>
+                                                            <%= bookings[i].email %>
+                                                        </td>
+                                                        <td>
+                                                            <%= bookings[i].contact %>
+                                                        </td>
+                                                        <td>
+                                                            <%= bookings[i].numberOfGuest %>
+                                                        </td>
+                                                        <td>
+                                                            <%= bookings[i].date %>
+                                                        </td>
+                                                        <td>
+                                                            <%= bookings[i].time %>
+                                                        </td>
+                                                        <td>
+                                                            <%= bookings[i].assignedTable.tableNumber %>
+                                                        </td>
+                                                    </tr>
+                                                    <% } %>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <% } else { %>
+                                        <h2 class="uppercase"
+                                            style="font-weight:600; letter-spacing: 5px; line-height: 1.5">You do
+                                            not have any reservations.</h2>
+                                        <div class="navigate">
+                                            <p>Go to <a href="/reservation"
+                                                    style="color: hsl(var(--clr-primary))">Reservation</a> to make a
+                                                booking.</p>
+                                        </div>
+                                        <% } %>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+        </div>
+        <script src="/javascript/nav.js"></script>
+        <script src="/javascript/user/nav.js"></script>
+        <script src="/javascript/user/bookingHistory.js"></script>
+    </body>
+
+    </html>

@@ -1,0 +1,235 @@
+<%- include('partials/header') %>
+  <link rel="stylesheet" href="/css/booking.css">
+  <link rel="preload" as="image" href="/images/reservation/reservation.webp">
+  </head>
+
+  <body>
+    <div class="container">
+      <%- include('partials/nav') -%>
+        <main class="main flex flex-column" id="main">
+          <section class="page-left">
+            <div class="page-left-content flex flex-column">
+              <h2 class="uppercase">Book a Table</h2>
+              <h1>Reservation</h1>
+            </div>
+
+            <img class="hero-img" src="/images/reservation/reservation.webp" alt="">
+
+          </section>
+          <section class="page-right">
+            <div class="page-right-content">
+              <h2 class="uppercase">Book a table</h2>
+              <p>
+                We look forward to serving you! Secure your spot by reserving a table with us today. You
+                are only a few clicks away to reserve your table.
+              </p>
+            </div>
+            <section class="form-container">
+                <form action="/reservation" method="post" class="reservation-form" name="reservation-form"
+                  id="reservation-form" autocomplete="off">
+                  <div class="guest-container">
+                    <label for="guests">Number of Guests</label>
+                    <select name="guests" id="guests" form="reservation-form" style="display: none">
+                      <option value="1" selected>1 person</option>
+                      <option value="2">2 people</option>
+                      <option value="3">3 people</option>
+                      <option value="4">4 people</option>
+                      <option value="5">5 people</option>
+                      <option value="6">6 people</option>
+                      <option value="7">7 people</option>
+                      <option value="8">8 people</option>
+                      <option value="9">9 people</option>
+                      <option value="10">10 people</option>
+                      <option value="11">11 people</option>
+                      <option value="12">12 people</option>
+                      <option value="13">13 people</option>
+                      <option value="14">14 people</option>
+                      <option value="15">15 people</option>
+                      <option value="16">16 people</option>
+                      <option value="17">17 people</option>
+                      <option value="18">18 people</option>
+                      <option value="19">19 people</option>
+                      <option value="20">20 people</option>
+                    </select>
+                    <div class="select-container w-100" tabindex="0">
+                      <div class="holder flex">
+                        <span class="icon">
+                          <img src="/images/login/user-regular.svg" width="20px" height="16px" alt="" class="inline">
+                        </span>
+                        <span class="current select-current">
+                          <% if (guest) { %>
+                            <% if (parseInt(guest)==1) { %>
+                              1 person
+                              <% } else { %>
+                                <%= guest %> people
+                                  <% } %>
+                                    <% } else { %>
+                                      1 person
+                                      <% } %>
+                        </span>
+                        <span class="icon" id="select-icon">
+                          <img class="inline" src="/images/icon-dropdown-indicator.svg" alt="">
+                        </span>
+                      </div>
+                      <ul class="list select-list w-100">
+                        <li data-value="1" class="option select-list-option selected">1 person
+                        </li>
+                        <li data-value="2" class="option select-list-option">2 people</li>
+                        <li data-value="3" class="option select-list-option">3 people</li>
+                        <li data-value="4" class="option select-list-option">4 people</li>
+                        <li data-value="5" class="option select-list-option">5 people</li>
+                        <li data-value="6" class="option select-list-option">6 people</li>
+                        <li data-value="7" class="option select-list-option">7 people</li>
+                        <li data-value="8" class="option select-list-option">8 people</li>
+                        <li data-value="9" class="option select-list-option">9 people</li>
+                        <li data-value="10" class="option select-list-option">10 people</li>
+                        <li data-value="11" class="option select-list-option">11 people</li>
+                        <li data-value="12" class="option select-list-option">12 people</li>
+                        <li data-value="13" class="option select-list-option">13 people</li>
+                        <li data-value="14" class="option select-list-option">14 people</li>
+                        <li data-value="15" class="option select-list-option">15 people</li>
+                        <li data-value="16" class="option select-list-option">16 people</li>
+                        <li data-value="17" class="option select-list-option">17 people</li>
+                        <li data-value="18" class="option select-list-option">18 people</li>
+                        <li data-value="19" class="option select-list-option">19 people</li>
+                        <li data-value="20" class="option select-list-option">20 people</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="date-container">
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" value="<%= date %>" pattern="\d{4}-\d{2}-\d{2}" required>
+                  </div>
+
+                  <div class="time-container">
+                    <label for="time">Time</label>
+                    <input type="text" name="time" id="time" style="display:none">
+                    <div class="time-dropdown-container w-100" tabindex="0">
+                      <div class="holder flex">
+                        <span class="icon">
+                          <img src="/images/clock-regular.svg" width="20px" height="16px" alt="" class="inline">
+                        </span>
+                        <span class="current time-current">
+                          <%= time %>
+                        </span>
+                        <span class="icon" id="time-icon">
+                          <img class="inline" src="/images/icon-dropdown-indicator.svg" alt="">
+                        </span>
+                      </div>
+                      <ul class="list time-list w-100">
+                        <li data-value="8 00" class="option time-list-option">8:00 AM</li>
+                        <li data-value="8 30" class="option time-list-option">8:30 AM</li>
+                        <li data-value="9 00" class="option time-list-option">9:00 AM</li>
+                        <li data-value="9 30" class="option time-list-option">9:30 AM</li>
+                        <li data-value="10 00" class="option time-list-option">10:00 AM</li>
+                        <li data-value="10 30" class="option time-list-option">10:30 AM</li>
+                        <li data-value="11 00" class="option time-list-option">11:00 AM</li>
+                        <li data-value="11 30" class="option time-list-option">11:30 AM</li>
+                        <li data-value="12 00" class="option time-list-option">12:00 PM</li>
+                        <li data-value="12 30" class="option time-list-option">12:30 PM</li>
+                        <li data-value="13 00" class="option time-list-option">1:00 PM</li>
+                        <li data-value="13 30" class="option time-list-option">1:30 PM</li>
+                        <li data-value="14 00" class="option time-list-option">2:00 PM</li>
+                        <li data-value="14 30" class="option time-list-option">2:30 PM</li>
+                        <li data-value="15 00" class="option time-list-option">3:00 PM</li>
+                        <li data-value="15 30" class="option time-list-option">3:30 PM</li>
+                        <li data-value="16 00" class="option time-list-option">4:00 PM</li>
+                        <li data-value="16 30" class="option time-list-option">4:30 PM</li>
+                        <li data-value="17 00" class="option time-list-option">5:00 PM</li>
+                        <li data-value="17 30" class="option time-list-option">5:30 PM</li>
+                        <li data-value="18 00" class="option time-list-option">6:00 PM</li>
+                        <li data-value="18 30" class="option time-list-option">6:30 PM</li>
+                        <li data-value="19 00" class="option time-list-option">7:00 PM</li>
+                        <li data-value="19 30" class="option time-list-option">7:30 PM</li>
+                        <li data-value="20 00" class="option time-list-option">8:00 PM</li>
+                        <li data-value="20 30" class="option time-list-option">8:30 PM</li>
+                        <li data-value="21 00" class="option time-list-option">9:00 PM</li>
+                        <li data-value="21 30" class="option time-list-option">9:30 PM</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="request-container">
+                    <label for="request">Requests (Optional)</label>
+                    <textarea name="request" id="request" placeholder="Your Message"><%= request %></textarea>
+                  </div>
+
+                  <div class="btn inline">
+                    <button class="uppercase w-100" type="button" id="modal-initiator">Book a
+                      Table</button>
+                  </div>
+
+                  <div class="modal-container flex flex-column">
+                    <div class="modal-content flex flex-column">
+                      <div class="modal-content-header flex w-100">
+                        <img class="logo" src="/images/logo.svg" alt="logo">
+                        <img src="/images/icon-close.svg" alt="close" id="modal-close">
+                      </div>
+                      <div class="confirmation-modal-content flex flex-column">
+                        <h2>Confirm your Booking</h2>
+                        <p>This message is to confirm your reservation. The details of your booking
+                          are as follows:</p>
+                        <div class="booking-confirmation flex">
+                          <div class="diner-confirmation flex">
+                            <img class="inline" src="/images/login/user-regular.svg" alt="Diner" width="20px"
+                              height="16px">
+                            <span class="booking-diner"></span>
+                          </div>
+
+                          <div class="time-confirmation flex">
+                            <img class="inline" src="/images/clock-regular.svg" alt="Time" width="20px" height="16px">
+                            <span class="booking-time"></span>
+                          </div>
+
+                          <div class="date-confirmation flex">
+                            <img class="inline" src="/images/calendar-regular.svg" alt="Date" width="20px"
+                              height="16px">
+                            <span class="booking-date"></span>
+                          </div>
+                        </div>
+                        <button class="uppercase cr" type="submit">Complete Reservation</button>
+                      </div>
+                      <div class="booking booking-success flex flex-column" id="booking-success">
+                        <h2>Booking Confirmed</h2>
+                        <p>A Booking for <span class="diner-value"></span> is made for <span class="diner-date"></span>
+                          at <span class="diner-time"></span>.</p>
+                        <div class="btn-grp">
+                          <button type="button" class="uppercase order-ok">Ok</button>
+                        </div>
+                      </div>
+                      <div class="booking booking-failure flex flex-column" id="booking-failure">
+                        <h2>Booking Failed</h2>
+                        <p>Oops! No tables available at the moment! Try Booking at a different time-slot or click <span>YES</span> to
+                          be included in waitlist for current time-slot.</p>
+                        <h3>Would you like to be listed on the waitlist?</h3>
+                        <div class="btn-grp">
+                          <button type="button" class="uppercase waitlist-ok">Yes</button>
+                          <button type="button" class="uppercase waitlist-cancel">No</button>
+                        </div>
+                      </div>
+                      <div class="waitlist flex flex-column" id="waitlist">
+                        <h2>Waitlist Added</h2>
+                        <p>You have been added to the waitlist. We will notify you through call or email when your table is ready.</p>
+                        <div class="btn-grp">
+                          <button type="button" class="waitlist-finish">Ok</button>
+                        </div>
+                      </div>
+                      <div class="waitlist flex flex-column" id="waitlist-exists">
+                        <h2>Waitlist Exists!!!</h2>
+                        <p>You have already been added to the waitlist for the booking of <span class="waitlist-exists-diner"></span> on <span class="waitlist-exists-date"></span> at <span class="waitlist-exists-time"></span>. We will notify you through call or email when your table is ready.</p>
+                        <div class="btn-grp">
+                          <button type="button" class="we-finish">I Understand</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+            </section>
+          </section>
+        </main>
+    </div>
+    <script src="/javascript/nav.js"></script>
+    <script src="/javascript/reservation.js"></script>
+  </body>
+
+  </html>

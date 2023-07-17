@@ -1,0 +1,13 @@
+[
+    {
+        "name" : "Szechuan hotpot " ,
+        "description" : " Diners add a variety of ingredients such as meats (beef, lamb, pork), seafood (shrimp, fish, squid), vegetables (cabbage, mushrooms, tofu) and noodles to the pot to cook." ,
+        "price" : "2200" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Dim Sum " ,
+        "description" : "Served as a brunch, where carts of different types of dim sum dishes are brought around to tables, and diners can choose which dishes they would like to order. The dim sum dishes are usually steamed or fried and often accompanied by a cup of tea." ,
+        "price" : "2100" 
+    }
+]

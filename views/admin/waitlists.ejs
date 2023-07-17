@@ -1,0 +1,104 @@
+<%- include('./partials/header') %>
+    <link rel="stylesheet" href="/css/admin.css">
+    </head>
+
+    <body>
+        <div class="container flex w-100">
+            <div class="primary-navbar invisible">
+                <%- include('./partials/primary-nav') %>
+            </div>
+            <main class="w-100" id="index-main">
+                <%- include('./partials/nav') %>
+                    <div class="content">
+                        <% if (waitlists.length> 0) { %>
+                            <div class="heading">
+                                <h1 class="uppercase text-center"
+                                    style="font-weight:600; letter-spacing: 5px; line-height: 1.5">Current Waitlists
+                                </h1>
+                            </div>
+                            <% } %>
+
+                                <% if (waitlists.length> 0) { %>
+                                    <div id="waitlists" class="flex flex-column waitlists">
+                                        <div class="card-view-options flex">
+                                            <button class="launch-edit-modal">
+                                                <img src="/images/bars-solid.svg" alt="">
+                                            </button>
+                                            <button class="launch-delete-modal">
+                                                <img src="/images/table-solid.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <% for( let i=0; i < waitlists.length; i++ ) { %>
+                                            <div class="card w-100">
+                                                <div class="card-content flex flex-column">
+                                                    <span id="<%= waitlists[i].id %>" data-id="<%= waitlists[i].id %>">
+                                                        <span class="key">Waitlist ID:</span>
+                                                        <span class="value" style="color: #d35400">
+                                                            <%= waitlists[i].id %>
+                                                        </span>
+                                                    </span>
+                                                    <span>
+                                                        <span class="key">Name:</span>
+                                                        <span class="value" style="color: #3498db">"<%= waitlists[i].name %>"</span>
+                                                    </span>
+                                                    <span>
+                                                        <span class="key">Email:</span>
+                                                        <span class="value" style="color: #55abe5">"<%= waitlists[i].email %>"</span>
+                                                    </span>
+
+                                                    <span>
+                                                        <span class="key">Contact:</span>
+                                                        <span class="value" style="color:#8e44ad ">
+                                                            <%= waitlists[i].contact %>
+                                                        </span>
+                                                    </span>
+
+                                                    <span>
+                                                        <span class="key">Party Size:</span>
+                                                        <span class="value" style="color: #5dade2">
+                                                            <%= waitlists[i].numberOfGuest %>
+                                                        </span>
+                                                    </span>
+
+                                                    <span>
+                                                        <span class="key">Date:</span>
+                                                        <span class="value" style="color: #27ae60">
+                                                            <%= waitlists[i].date %>
+                                                        </span>
+                                                    </span>
+
+                                                    <span>
+                                                        <span class="key">Time:</span>
+                                                        <span class="value" style="color: #229954">
+                                                            <%= waitlists[i].time %>
+                                                        </span>
+                                                    </span>
+
+                                                    <span>
+                                                        <span class="key">Created At:</span>
+                                                        <span class="value" style="color: #bdc3c7">
+                                                            <%= waitlists[i].createdAt %>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="card-actions flex">
+                                                    <button class="launch-delete-modal"
+                                                        data-id-holder="<%= waitlists[i].id %>">
+                                                        <img src="/images/trash-solid.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <% } %>
+                                    </div>
+                                    <% } else { %>
+                                        <h2 class="uppercase text-center"
+                                            style="font-weight:600; letter-spacing: 5px; line-height: 1.5; margin:2rem">No Wailists Available</h2>
+                                        <% } %>
+                    </div>
+            </main>
+
+        </div>
+        <script src="/javascript/admin/index.js"></script>
+    </body>
+
+    </html>

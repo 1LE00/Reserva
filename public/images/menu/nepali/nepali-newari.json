@@ -1,0 +1,58 @@
+[
+    {
+        "name" :"Buff Sukuti" ,
+        "description" : "Dried meat product of Nepalese origin."  ,
+        "price" : "300"  ,
+        "imagePath" : ""  
+    },
+    {
+        "name" : "Buff Kachila" ,
+        "description" : "Special meat delicacy of Newars, consisting of marinated raw minced meat." ,
+        "price" : "260" ,
+        "imagePath" : ""  
+    },
+    {
+        "name" : "Buff Sekuwa" ,
+        "description" : "Meat roasted in a natural wood fire in a traditional Nepalese country style served with pickle and lime." ,
+        "price" : "120"  ,
+        "imagePath" : "" 
+    },
+    {
+        "name" :"Buff Chilly" ,
+        "description" : "Meat stir-fried with fresh vegetables."  ,
+        "price" : "400" ,
+        "imagePath" : ""  
+    },
+    {
+        "name" : "Chatamari" , 
+        "description" : "Rice pancake which can have different toppings" ,
+        "price" : "360" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Alu Tama" ,
+        "description" : "Curry made of potatoes and bamboo shoots." ,
+        "price" : "280" ,
+        "imagePath" : "" 
+    },
+    {
+        "name" : "Aila",
+        "description" : "Aila is an alcoholic beverage with a strong taste" ,
+        "price" : "180" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Yomari" ,
+        "description" :"Soft Dough filled with Chaku ie brown sweet paste" ,
+        "price" : "120" ,
+        "imagePath" : "" 
+    },
+    {
+        "name" : "Mas Ko Bara" ,
+        "description" : "Lentil based fried doughnut type snack." ,
+        "price" : "400" ,
+        "imagePath" : "" 
+        
+    }
+        
+]

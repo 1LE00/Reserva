@@ -1,0 +1,44 @@
+[
+    {
+        "name" : "Wonton Soup" ,
+        "description" : "A type of Chinese dumpling commonly found across regional styles of Chinese cuisine" ,
+        "price" : "250" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Egg Drop Soup" ,
+        "description" : "A Chinese soup of wispy beaten eggs in chicken broth" ,
+        "price" : "300" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Beef Noodle Soup" ,
+        "description" : "Hot dough noodles with beef meat and broth." ,
+        "price" : "350" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Tomato Egg Soup" ,
+        "description" : "A classy tomato and egg soup" ,
+        "price" : "250" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Pork Mustard Soup" ,
+        "description" : "Mix soup with pork, garlic, ginger, Sichuan peppercorns, red pepper flakes, and cumin in a medium bowl" ,
+        "price" : "380" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Fish Fillet Soup" ,
+        "description" : "Warm fish broth served with chopped onions, garlics & parsley." ,
+        "price" : "370" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Chicken Corn Soup" ,
+        "description" : "Egg drop soup made with extra chicken, corn and veggies." ,
+        "price" : "380" ,
+        "imagePath" : ""
+    }
+]

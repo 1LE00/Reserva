@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "Beef Noodle" ,
+        "description" : "Spicy noodles with spring onions served with beef" ,
+        "price" :"380" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Shrimp Chow Mein" , 
+        "description" : "Dish made using egg noodles, juicy shrimp (prawns), and a few veggies and sauces." ,
+        "price" : "450" ,
+        "imagePath" : "" 
+    } ,
+    {
+        "name" : "Minced Pork Over Noodle" ,
+        "description" : " Noodles served with spiced pork meat and soy sauce." ,
+        "price" : "400" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Combo Chow Fun" , 
+        "description" : "Flat rice noodles that are stir fried with beans sprouts and other vegetables, meat, chicken, or seafood, and dressed in a sweet and savory brown sauce" ,
+        "price" : "480" ,
+        "imagePath" : ""
+    }
+]

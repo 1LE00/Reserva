@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "Parmigiana" ,
+        "description" : "Parmigiana di melanzane - an Italian dish made with fried, sliced eggplant layered with cheese and tomato sauce, then baked." ,
+        "price" : "1750" ,
+        "imagePath" : ""
+    } ,
+    {
+        "name" : "Bistecca alla Fiorentina " ,
+        "description" : "Italian steak made of young steer (vitellone) or heifer (scottona) that, combined with the specific preparation, makes it one of the most popular dishes of Tuscan cuisine." ,
+        "price" : "5620" ,
+        "imagePath" : ""
+    } , 
+    {
+        "name" : "Prosciutto di Parma" ,
+        "description" : "An Italian uncooked, unsmoked, and dry-cured ham served thinly slice." ,
+        "price" : "1850" ,
+        "imagePath" : ""
+    }
+]

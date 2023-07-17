@@ -1,0 +1,80 @@
+[
+    {
+        "name" : "Paneer Pakoda" ,
+        "description" : "Batter frying Indian cottage cheese aka paneer." ,
+        "price" : "550" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Veg Pakoda" ,
+        "description" : "A spiced fritter originating from the Indian subcontinent." ,
+        "price" : "320" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Aloo Tareko" ,
+        "description" : "Fried Potatoes with garnishing. " ,
+        "price" : "275" ,
+        "imagePath" :""
+    },
+    {
+        "name" : "Kaju Fry" ,
+        "description" : "Cashew nuts fried with spices and garnishing." ,
+        "price" : "1025" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Aloo Sandeko" ,
+        "description" : "Boiled potatoes with spicy and sour taste." ,
+        "price" : "275" ,
+        "imagePath" : "" 
+    },
+    {
+        "name" : "Green Salad" ,
+        "description" : "Basic Salad with vagetables",
+        "price" : "275" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Khashi Ko Sekuwa" ,
+        "description" : "Goat Meat roasted in a natural wood fire in a. traditional Nepalese country style." ,
+        "price" : "1150" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Chicken Sekuwa" ,
+        "description" : "Chicken Meat roasted in a natural wood fire in a. traditional Nepalese country style." ,
+        "price" : "695" ,
+        "imagePath" :"" 
+    },
+    {
+        "name" : "Pork Tareko" ,
+        "description" : "Chicken marinated meat roasted in a natural wood/log fire in a real traditional Nepalese country style" ,
+        "price" : "825" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Khashi Ko Chhoila" ,
+        "description" : "Goat grilled spicy dish." ,
+        "price" : "1125" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Chicken Chhoila" ,
+        "description" : "Chicken meat grilled and garnished with spices." ,
+        "price" : "695" ,
+        "imagePath" : ""
+     },
+     {
+        "name" : "Chicken Chilli" ,
+        "description" : "Appetizer made by tossing fried chicken in spicy hot chilli sauce" ,
+        "price" : "610" ,
+        "imagePath" : ""
+    },
+    {
+        "name" : "Khashi Ko Pakku" ,
+        "description" : "Mutton slow cooked with added flavour of cumin-coriander, turmeric, red chilli, and other inhouse whole spices served in earthen pot" ,
+        "price" : "1100" ,
+        "imagePath" :"" 
+    }   
+]

@@ -1,0 +1,80 @@
+<%- include('partials/header') %>
+    <link rel="stylesheet" href="/css/booking.css">
+    <link rel="preload" as="image" href="/images/contact/contact.webp">
+    </head>
+
+    <body>
+        <div class="container">
+            <%- include('partials/nav') -%>
+                <main class="main flex flex-column" id="main">
+                    <section class="page-left">
+                        <div class="page-left-content flex flex-column">
+                            <h2 class="uppercase">Contact</h2>
+                            <h1>Get In Touch</h1>
+                        </div>
+
+                        <img class="hero-img" src="/images/contact/contact.webp" alt="">
+
+                    </section>
+                    <section class="page-right">
+                        <div class="page-right-content">
+                            <h2 class="uppercase">Get In Touch</h2>
+                            <p>
+                                Need to get in touch? Fill out our contact form, give us a call or stop by during
+                                business hours. We're happy to answer any questions you have!
+                            </p>
+                        </div>
+                        <section class="form-container">
+                            <% if (!status) { %>
+                                <form action="/contact-us" method="post" class="contact-form" name="contact-form"
+                                    id="contact-form" autocomplete="off">
+
+                                    <div class="name-container">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name" placeholder="Enter your name"
+                                            value="<%= name %>">
+                                        <span class="error flex name-error">
+                                            <img class="inline" src="/images/circle-exclamation-solid.svg" alt="">
+                                            <span class="err-msg"></span>
+                                        </span>
+                                    </div>
+
+                                    <div class="email-container">
+                                        <label for="name">Email</label>
+                                        <input type="text" name="email" id="email" placeholder="Your email address"
+                                            value="<%= email %>">
+                                        <span class="error flex email-error">
+                                            <img class="inline" src="/images/circle-exclamation-solid.svg" alt="">
+                                            <span class="err-msg"></span>
+                                        </span>
+                                    </div>
+
+                                    <div class="request-container">
+                                        <label for="request">Message</label>
+                                        <textarea name="request" id="request"
+                                            placeholder="Your message"><%= request %></textarea>
+                                        <span class="error flex request-error">
+                                            <img class="inline" src="/images/circle-exclamation-solid.svg" alt="">
+                                            <span class="err-msg"></span>
+                                        </span>
+                                    </div>
+
+                                    <div class="btn inline">
+                                        <button class="uppercase w-100" id="btn-submit" type="submit"
+                                            data-wait="Please wait...">Send Message</button>
+                                    </div>
+                                </form>
+                                <% } else { %>
+                                    <div class="form-message form-message-success">
+                                        <div>Thank you! Your submission has been received!</div>
+                                    </div>
+                                    <% } %>
+                        </section>
+                    </section>
+                </main>
+        </div>
+        <script src="/javascript/nav.js"></script>
+        <script src="/javascript/contact.js"></script>
+    </body>
+
+    </html>
